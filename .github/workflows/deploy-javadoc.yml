@@ -25,6 +25,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Generate sitemap
+        run: python generate-sitemap.py
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

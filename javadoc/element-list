@@ -1,14 +1,7 @@
 org.tasktide.api
 org.tasktide.api.auth
 org.tasktide.api.exceptions
-org.tasktide.api.hateoas.links
-org.tasktide.api.hateoas.resource_map
-org.tasktide.api.resources.manager.rest
 org.tasktide.api.resources.services.rest
-org.tasktide.api.security_context.data_models
-org.tasktide.api.security_context.service_hooks
-org.tasktide.api.security_context.service_hooks.jpa_repositories
-org.tasktide.api.security_context.service_hooks.template_repositories
 org.tasktide.api.utils
 org.tasktide.core
 org.tasktide.core.exceptions

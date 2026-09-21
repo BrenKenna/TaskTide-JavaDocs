@@ -1,7 +1,7 @@
 from pathlib import Path
 from xml.etree.ElementTree import Element, SubElement, ElementTree
 
-BASE_URL = "https://api.docs.tasktide.org"
+BASE_URL = "https://api-docs.tasktide.org"
 
 root = Element(
     "urlset",

@@ -30,6 +30,7 @@ loadScripts(document, 'script');</script>
 <li><a href="../../../../index.html">Overview</a></li>
 <li class="nav-bar-cell1-rev">Class</li>
 <li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
 <li><a href="../../../../index-all.html">Index</a></li>
 <li><a href="../../../../search.html">Search</a></li>
 <li><a href="../../../../help-doc.html#class">Help</a></li>
@@ -62,7 +63,7 @@ loadScripts(document, 'script');</script>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
-<li><a href="#waitSeconds(int)" tabindex="0">waitSeconds(int)</a></li>
+<li><a href="#wait(java.util.concurrent.TimeUnit,long)" tabindex="0">wait(TimeUnit, long)</a></li>
 <li><a href="#waitOnExecutorTrackerWorkItem(int,org.apache.logging.log4j.Logger)" tabindex="0">waitOnExecutorTrackerWorkItem(int, Logger)</a></li>
 <li><a href="#countNotActiveItemTask(java.util.List)" tabindex="0">countNotActiveItemTask(List)</a></li>
 <li><a href="#countNotActiveWorkItem(java.util.List)" tabindex="0">countNotActiveWorkItem(List)</a></li>
@@ -108,44 +109,45 @@ loadScripts(document, 'script');</script>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#countNotActiveItemTask(java.util.List)" class="member-name-link">countNotActiveItemTask</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../core/model/task/ItemTask.html" title="class in org.tasktide.core.model.task">ItemTask</a>&gt;&nbsp;workload)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Scan tasks for count of done</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#countNotActiveItemTask(java.util.List)" class="member-name-link">countNotActiveItemTask</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../core/model/task/ItemTask.html" title="class in org.tasktide.core.model.task">ItemTask</a>&gt;&nbsp;workload)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#countNotActiveWorkItem(java.util.List)" class="member-name-link">countNotActiveWorkItem</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../core/model/workitem/WorkItem.html" title="class in org.tasktide.core.model.workitem">WorkItem</a>&gt;&nbsp;tasks)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Count non-pending tasks across <a href="../../core/model/workitem/WorkItem.html" title="class in org.tasktide.core.model.workitem"><code>WorkItem</code></a> list</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#countNotActiveWorkItem(java.util.List)" class="member-name-link">countNotActiveWorkItem</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../core/model/workitem/WorkItem.html" title="class in org.tasktide.core.model.workitem">WorkItem</a>&gt;&nbsp;tasks)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#fetchExecutionTimes(java.util.List,org.apache.logging.log4j.Logger)" class="member-name-link">fetchExecutionTimes</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../core/model/task/ItemTask.html" title="class in org.tasktide.core.model.task">ItemTask</a>&gt;&nbsp;workload,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#fetchExecutionTimes(java.util.List,org.apache.logging.log4j.Logger)" class="member-name-link">fetchExecutionTimes</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../core/model/task/ItemTask.html" title="class in org.tasktide.core.model.task">ItemTask</a>&gt;&nbsp;workload,
  org.apache.logging.log4j.Logger&nbsp;logger)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Log execution times on INFO level</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#fetchExecutionTimesWorkItem(java.util.List,org.apache.logging.log4j.Logger)" class="member-name-link">fetchExecutionTimesWorkItem</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../core/model/workitem/WorkItem.html" title="class in org.tasktide.core.model.workitem">WorkItem</a>&gt;&nbsp;workload,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#fetchExecutionTimesWorkItem(java.util.List,org.apache.logging.log4j.Logger)" class="member-name-link">fetchExecutionTimesWorkItem</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../core/model/workitem/WorkItem.html" title="class in org.tasktide.core.model.workitem">WorkItem</a>&gt;&nbsp;workload,
  org.apache.logging.log4j.Logger&nbsp;logger)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Fetch execution times across all</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#waitOnExecutorTrackerWorkItem(int,org.apache.logging.log4j.Logger)" class="member-name-link">waitOnExecutorTrackerWorkItem</a><wbr>(int&nbsp;expected,
- org.apache.logging.log4j.Logger&nbsp;logger)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#wait(java.util.concurrent.TimeUnit,long)" class="member-name-link">wait</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/TimeUnit.html" title="class or interface in java.util.concurrent" class="external-link">TimeUnit</a>&nbsp;units,
+ long&nbsp;sleepTime)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Waits via <a href="../trackers/FutureTrackers.html" title="class in org.tasktide.engine.trackers"><code>FutureTrackers</code></a></div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#waitSeconds(int)" class="member-name-link">waitSeconds</a><wbr>(int&nbsp;seconds)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Wait required number of seconds</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#waitOnExecutorTrackerWorkItem(int,org.apache.logging.log4j.Logger)" class="member-name-link">waitOnExecutorTrackerWorkItem</a><wbr>(int&nbsp;expected,
+ org.apache.logging.log4j.Logger&nbsp;logger)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 </div>
 </div>
 </div>
@@ -181,14 +183,15 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="waitSeconds(int)">
-<h3>waitSeconds</h3>
+<section class="detail" id="wait(java.util.concurrent.TimeUnit,long)">
+<h3>wait</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">waitSeconds</span><wbr><span class="parameters">(int&nbsp;seconds)</span></div>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">wait</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/TimeUnit.html" title="class or interface in java.util.concurrent" class="external-link">TimeUnit</a>&nbsp;units,
+ long&nbsp;sleepTime)</span></div>
 <div class="block">Wait required number of seconds</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>seconds</code> - </dd>
+<dd><code>sleepTime</code> - </dd>
 <dt>Returns:</dt>
 <dd>boolean</dd>
 </dl>
@@ -199,8 +202,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="waitOnExecutorTrackerWorkItem(int,org.apache.logging.log4j.Logger)">
 <h3>waitOnExecutorTrackerWorkItem</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">waitOnExecutorTrackerWorkItem</span><wbr><span class="parameters">(int&nbsp;expected,
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">waitOnExecutorTrackerWorkItem</span><wbr><span class="parameters">(int&nbsp;expected,
  org.apache.logging.log4j.Logger&nbsp;logger)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Waits via <a href="../trackers/FutureTrackers.html" title="class in org.tasktide.engine.trackers"><code>FutureTrackers</code></a></div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -214,7 +219,9 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="countNotActiveItemTask(java.util.List)">
 <h3>countNotActiveItemTask</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">countNotActiveItemTask</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../core/model/task/ItemTask.html" title="class in org.tasktide.core.model.task">ItemTask</a>&gt;&nbsp;workload)</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public static</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">countNotActiveItemTask</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../core/model/task/ItemTask.html" title="class in org.tasktide.core.model.task">ItemTask</a>&gt;&nbsp;workload)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Scan tasks for count of done</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -229,7 +236,9 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="countNotActiveWorkItem(java.util.List)">
 <h3>countNotActiveWorkItem</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">countNotActiveWorkItem</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../core/model/workitem/WorkItem.html" title="class in org.tasktide.core.model.workitem">WorkItem</a>&gt;&nbsp;tasks)</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public static</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">countNotActiveWorkItem</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../core/model/workitem/WorkItem.html" title="class in org.tasktide.core.model.workitem">WorkItem</a>&gt;&nbsp;tasks)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Count non-pending tasks across <a href="../../core/model/workitem/WorkItem.html" title="class in org.tasktide.core.model.workitem"><code>WorkItem</code></a> list</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -244,8 +253,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="fetchExecutionTimesWorkItem(java.util.List,org.apache.logging.log4j.Logger)">
 <h3>fetchExecutionTimesWorkItem</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">fetchExecutionTimesWorkItem</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../core/model/workitem/WorkItem.html" title="class in org.tasktide.core.model.workitem">WorkItem</a>&gt;&nbsp;workload,
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">fetchExecutionTimesWorkItem</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../core/model/workitem/WorkItem.html" title="class in org.tasktide.core.model.workitem">WorkItem</a>&gt;&nbsp;workload,
  org.apache.logging.log4j.Logger&nbsp;logger)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Fetch execution times across all</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -259,8 +270,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="fetchExecutionTimes(java.util.List,org.apache.logging.log4j.Logger)">
 <h3>fetchExecutionTimes</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">fetchExecutionTimes</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../core/model/task/ItemTask.html" title="class in org.tasktide.core.model.task">ItemTask</a>&gt;&nbsp;workload,
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">fetchExecutionTimes</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../core/model/task/ItemTask.html" title="class in org.tasktide.core.model.task">ItemTask</a>&gt;&nbsp;workload,
  org.apache.logging.log4j.Logger&nbsp;logger)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Log execution times on INFO level</div>
 <dl class="notes">
 <dt>Parameters:</dt>

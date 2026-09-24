@@ -21,7 +21,6 @@ org.tasktide.core.model.workitem
 org.tasktide.core.repository
 org.tasktide.core.repository.itemstore_repo
 org.tasktide.core.repository.jpa_repo
-org.tasktide.core.repository.json_repo
 org.tasktide.core.repository.template_repo
 org.tasktide.core.services
 org.tasktide.core.supporting

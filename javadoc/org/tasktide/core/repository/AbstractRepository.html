@@ -30,6 +30,7 @@ loadScripts(document, 'script');</script>
 <li><a href="../../../../index.html">Overview</a></li>
 <li class="nav-bar-cell1-rev">Class</li>
 <li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
 <li><a href="../../../../index-all.html">Index</a></li>
 <li><a href="../../../../search.html">Search</a></li>
 <li><a href="../../../../help-doc.html#class">Help</a></li>
@@ -61,12 +62,13 @@ loadScripts(document, 'script');</script>
 <li><a href="#COLLECTION_CLASS" tabindex="0">COLLECTION_CLASS</a></li>
 <li><a href="#collectionName" tabindex="0">collectionName</a></li>
 <li><a href="#repoType" tabindex="0">repoType</a></li>
+<li><a href="#modelType" tabindex="0">modelType</a></li>
 <li><a href="#resultSetSize" tabindex="0">resultSetSize</a></li>
 </ol>
 </li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
-<li><a href="#%3Cinit%3E(java.lang.Class,java.lang.String,org.tasktide.core.repository.RepositoryType)" tabindex="0">AbstractRepository(Class, String, RepositoryType)</a></li>
+<li><a href="#%3Cinit%3E(org.tasktide.core.TaskTideModelType,java.lang.Class,java.lang.String,org.tasktide.core.repository.RepositoryType)" tabindex="0">AbstractRepository(TaskTideModelType, Class, String, RepositoryType)</a></li>
 </ol>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
@@ -83,6 +85,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#getRepoType()" tabindex="0">getRepoType()</a></li>
 <li><a href="#getResultSetSize()" tabindex="0">getResultSetSize()</a></li>
 <li><a href="#setResultSetSize(int)" tabindex="0">setResultSetSize(int)</a></li>
+<li><a href="#validateQueryFieldName(java.lang.String)" tabindex="0">validateQueryFieldName(String)</a></li>
 </ol>
 </li>
 </ol>
@@ -102,7 +105,7 @@ loadScripts(document, 'script');</script>
 </dl>
 <dl class="notes">
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="JpaRepository.html" title="class in org.tasktide.core.repository">JpaRepository</a>, <a href="TemplateRepository.html" title="class in org.tasktide.core.repository">TemplateRepository</a></code></dd>
+<dd><code><a href="ItemStoreRepository.html" title="class in org.tasktide.core.repository">ItemStoreRepository</a>, <a href="JpaRepository.html" title="class in org.tasktide.core.repository">JpaRepository</a>, <a href="TemplateRepository.html" title="class in org.tasktide.core.repository">TemplateRepository</a></code></dd>
 </dl>
 <hr>
 <div class="horizontal-scroll">
@@ -129,12 +132,15 @@ implements <a href="../TaskTideRepository.html" title="interface in org.tasktide
 <div class="col-first odd-row-color"><code>protected final <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color"><code><a href="#collectionName" class="member-name-link">collectionName</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>protected final <a href="RepositoryType.html" title="enum class in org.tasktide.core.repository">RepositoryType</a></code></div>
-<div class="col-second even-row-color"><code><a href="#repoType" class="member-name-link">repoType</a></code></div>
+<div class="col-first even-row-color"><code>protected final <a href="../TaskTideModelType.html" title="enum class in org.tasktide.core">TaskTideModelType</a></code></div>
+<div class="col-second even-row-color"><code><a href="#modelType" class="member-name-link">modelType</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected int</code></div>
-<div class="col-second odd-row-color"><code><a href="#resultSetSize" class="member-name-link">resultSetSize</a></code></div>
+<div class="col-first odd-row-color"><code>protected final <a href="RepositoryType.html" title="enum class in org.tasktide.core.repository">RepositoryType</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#repoType" class="member-name-link">repoType</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>protected int</code></div>
+<div class="col-second even-row-color"><code><a href="#resultSetSize" class="member-name-link">resultSetSize</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -146,7 +152,8 @@ implements <a href="../TaskTideRepository.html" title="interface in org.tasktide
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.Class,java.lang.String,org.tasktide.core.repository.RepositoryType)" class="member-name-link">AbstractRepository</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;<a href="#type-param-T" title="type parameter in AbstractRepository">T</a>&gt;&nbsp;modelClass,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.tasktide.core.TaskTideModelType,java.lang.Class,java.lang.String,org.tasktide.core.repository.RepositoryType)" class="member-name-link">AbstractRepository</a><wbr>(<a href="../TaskTideModelType.html" title="enum class in org.tasktide.core">TaskTideModelType</a>&nbsp;modelType,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;<a href="#type-param-T" title="type parameter in AbstractRepository">T</a>&gt;&nbsp;modelClass,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;collectionName,
  <a href="RepositoryType.html" title="enum class in org.tasktide.core.repository">RepositoryType</a>&nbsp;repoType)</code></div>
 <div class="col-last even-row-color">
@@ -237,6 +244,11 @@ implements <a href="../TaskTideRepository.html" title="interface in org.tasktide
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Set results set size</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#validateQueryFieldName(java.lang.String)" class="member-name-link">validateQueryFieldName</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;query)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Method to evaluate field members</div>
+</div>
 </div>
 </div>
 </div>
@@ -282,6 +294,14 @@ implements <a href="../TaskTideRepository.html" title="interface in org.tasktide
 </section>
 </li>
 <li>
+<section class="detail" id="modelType">
+<h3>modelType</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type"><a href="../TaskTideModelType.html" title="enum class in org.tasktide.core">TaskTideModelType</a></span>&nbsp;<span class="element-name">modelType</span></div>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="resultSetSize">
 <h3>resultSetSize</h3>
 <div class="horizontal-scroll">
@@ -298,15 +318,17 @@ implements <a href="../TaskTideRepository.html" title="interface in org.tasktide
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(java.lang.Class,java.lang.String,org.tasktide.core.repository.RepositoryType)">
+<section class="detail" id="&lt;init&gt;(org.tasktide.core.TaskTideModelType,java.lang.Class,java.lang.String,org.tasktide.core.repository.RepositoryType)">
 <h3>AbstractRepository</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">AbstractRepository</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;<a href="#type-param-T" title="type parameter in AbstractRepository">T</a>&gt;&nbsp;modelClass,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">AbstractRepository</span><wbr><span class="parameters">(<a href="../TaskTideModelType.html" title="enum class in org.tasktide.core">TaskTideModelType</a>&nbsp;modelType,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;<a href="#type-param-T" title="type parameter in AbstractRepository">T</a>&gt;&nbsp;modelClass,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;collectionName,
  <a href="RepositoryType.html" title="enum class in org.tasktide.core.repository">RepositoryType</a>&nbsp;repoType)</span></div>
 <div class="block">Construct with target model class, and collection name</div>
 <dl class="notes">
 <dt>Parameters:</dt>
+<dd><code>modelType</code> - </dd>
 <dd><code>modelClass</code> - </dd>
 <dd><code>collectionName</code> - </dd>
 <dd><code>repoType</code> - </dd>
@@ -492,7 +514,7 @@ implements <a href="../TaskTideRepository.html" title="interface in org.tasktide
 <div class="block">Get repository type</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>RepositoryType</dd>
+<dd><a href="RepositoryType.html" title="enum class in org.tasktide.core.repository"><code>RepositoryType</code></a></dd>
 </dl>
 </div>
 </section>
@@ -523,6 +545,21 @@ implements <a href="../TaskTideRepository.html" title="interface in org.tasktide
 <dd><code><a href="../TaskTideRepository.html#setResultSetSize(int)">setResultSetSize</a></code>&nbsp;in interface&nbsp;<code><a href="../TaskTideRepository.html" title="interface in org.tasktide.core">TaskTideRepository</a>&lt;<a href="#type-param-T" title="type parameter in AbstractRepository">T</a> extends <a href="../TaskTideModel.html" title="interface in org.tasktide.core">TaskTideModel</a>&lt;<a href="#type-param-T" title="type parameter in AbstractRepository">T</a>&gt;&gt;</code></dd>
 <dt>Parameters:</dt>
 <dd><code>nRecords</code> - </dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="validateQueryFieldName(java.lang.String)">
+<h3>validateQueryFieldName</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">validateQueryFieldName</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;query)</span></div>
+<div class="block">Method to evaluate field members</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>query</code> - </dd>
+<dt>Returns:</dt>
+<dd>boolean</dd>
 </dl>
 </div>
 </section>

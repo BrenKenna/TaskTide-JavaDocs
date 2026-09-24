@@ -30,6 +30,7 @@ loadScripts(document, 'script');</script>
 <li><a href="../../../../index.html">Overview</a></li>
 <li class="nav-bar-cell1-rev">Class</li>
 <li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
 <li><a href="../../../../index-all.html">Index</a></li>
 <li><a href="../../../../search.html">Search</a></li>
 <li><a href="../../../../help-doc.html#class">Help</a></li>
@@ -71,8 +72,6 @@ loadScripts(document, 'script');</script>
 <li><a href="#writeElectionFile(org.tasktide.mutex.model.Mutex)" tabindex="0">writeElectionFile(Mutex)</a></li>
 <li><a href="#readMutexFromFile(java.nio.file.Path)" tabindex="0">readMutexFromFile(Path)</a></li>
 <li><a href="#removeHostFile(org.tasktide.mutex.model.Mutex)" tabindex="0">removeHostFile(Mutex)</a></li>
-<li><a href="#waitJitterTime()" tabindex="0">waitJitterTime()</a></li>
-<li><a href="#waitJitterTime(long)" tabindex="0">waitJitterTime(long)</a></li>
 <li><a href="#deleteFile(java.nio.file.Path)" tabindex="0">deleteFile(Path)</a></li>
 <li><a href="#writeMutexFile(org.tasktide.mutex.model.Mutex,java.nio.file.Path)" tabindex="0">writeMutexFile(Mutex, Path)</a></li>
 <li><a href="#writeMutex(org.tasktide.mutex.model.Mutex,org.tasktide.mutex.model.MutexFileType)" tabindex="0">writeMutex(Mutex, MutexFileType)</a></li>
@@ -191,16 +190,6 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#toJson(java.lang.Object)" class="member-name-link">toJson</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;data)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Represents provided data as JSON string</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#waitJitterTime()" class="member-name-link">waitJitterTime</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Wait for random jitter time</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#waitJitterTime(long)" class="member-name-link">waitJitterTime</a><wbr>(long&nbsp;time)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Wait for random jitter time</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#writeConfirmatoryBallot(org.tasktide.mutex.model.Mutex,java.nio.file.Path)" class="member-name-link">writeConfirmatoryBallot</a><wbr>(<a href="../model/Mutex.html" title="class in org.tasktide.mutex.model">Mutex</a>&nbsp;mutex,
@@ -397,34 +386,6 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>mutex</code> - </dd>
-<dt>Returns:</dt>
-<dd>boolean</dd>
-</dl>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="waitJitterTime()">
-<h3>waitJitterTime</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">waitJitterTime</span>()</div>
-<div class="block">Wait for random jitter time</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>boolean</dd>
-</dl>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="waitJitterTime(long)">
-<h3>waitJitterTime</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">waitJitterTime</span><wbr><span class="parameters">(long&nbsp;time)</span></div>
-<div class="block">Wait for random jitter time</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>time</code> - </dd>
 <dt>Returns:</dt>
 <dd>boolean</dd>
 </dl>

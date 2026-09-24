@@ -29,6 +29,7 @@ loadScripts(document, 'script');</script>
 <ul id="navbar-top-firstrow" class="nav-list" title="Navigation">
 <li><a href="index.html">Overview</a></li>
 <li class="nav-bar-cell1-rev">Tree</li>
+<li><a href="deprecated-list.html">Deprecated</a></li>
 <li><a href="index-all.html">Index</a></li>
 <li><a href="search.html">Search</a></li>
 <li><a href="help-doc.html#tree">Help</a></li>
@@ -74,7 +75,6 @@ loadScripts(document, 'script');</script>
 <li><a href="org/tasktide/core/repository/package-tree.html">org.tasktide.core.repository</a>, </li>
 <li><a href="org/tasktide/core/repository/itemstore_repo/package-tree.html">org.tasktide.core.repository.itemstore_repo</a>, </li>
 <li><a href="org/tasktide/core/repository/jpa_repo/package-tree.html">org.tasktide.core.repository.jpa_repo</a>, </li>
-<li><a href="org/tasktide/core/repository/json_repo/package-tree.html">org.tasktide.core.repository.json_repo</a>, </li>
 <li><a href="org/tasktide/core/repository/template_repo/package-tree.html">org.tasktide.core.repository.template_repo</a>, </li>
 <li><a href="org/tasktide/core/services/package-tree.html">org.tasktide.core.services</a>, </li>
 <li><a href="org/tasktide/core/supporting/package-tree.html">org.tasktide.core.supporting</a>, </li>
@@ -157,6 +157,16 @@ loadScripts(document, 'script');</script>
 </li>
 <li class="circle">org.tasktide.core.repository.<a href="org/tasktide/core/repository/AbstractRepository.html" class="type-name-link" title="class in org.tasktide.core.repository">AbstractRepository</a>&lt;T&gt; (implements org.tasktide.core.<a href="org/tasktide/core/TaskTideRepository.html" title="interface in org.tasktide.core">TaskTideRepository</a>&lt;T&gt;)
 <ul>
+<li class="circle">org.tasktide.core.repository.<a href="org/tasktide/core/repository/ItemStoreRepository.html" class="type-name-link" title="class in org.tasktide.core.repository">ItemStoreRepository</a>&lt;T&gt;
+<ul>
+<li class="circle">org.tasktide.core.repository.itemstore_repo.<a href="org/tasktide/core/repository/itemstore_repo/ItemStoreJobEnvironmentRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.itemstore_repo">ItemStoreJobEnvironmentRepository</a></li>
+<li class="circle">org.tasktide.core.repository.itemstore_repo.<a href="org/tasktide/core/repository/itemstore_repo/ItemStoreMetricDataRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.itemstore_repo">ItemStoreMetricDataRepository</a></li>
+<li class="circle">org.tasktide.core.repository.itemstore_repo.<a href="org/tasktide/core/repository/itemstore_repo/ItemStoreMetricProfileRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.itemstore_repo">ItemStoreMetricProfileRepository</a></li>
+<li class="circle">org.tasktide.core.repository.itemstore_repo.<a href="org/tasktide/core/repository/itemstore_repo/ItemStoreStepRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.itemstore_repo">ItemStoreStepRepository</a></li>
+<li class="circle">org.tasktide.core.repository.itemstore_repo.<a href="org/tasktide/core/repository/itemstore_repo/ItemStoreWorkflowRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.itemstore_repo">ItemStoreWorkflowRepository</a></li>
+<li class="circle">org.tasktide.core.repository.itemstore_repo.<a href="org/tasktide/core/repository/itemstore_repo/ItemStoreWorkItemRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.itemstore_repo">ItemStoreWorkItemRepository</a></li>
+</ul>
+</li>
 <li class="circle">org.tasktide.core.repository.<a href="org/tasktide/core/repository/JpaRepository.html" class="type-name-link" title="class in org.tasktide.core.repository">JpaRepository</a>&lt;T&gt;
 <ul>
 <li class="circle">org.tasktide.core.repository.jpa_repo.<a href="org/tasktide/core/repository/jpa_repo/JpaJobEnvironmentRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.jpa_repo">JpaJobEnvironmentRepository</a></li>
@@ -225,7 +235,6 @@ loadScripts(document, 'script');</script>
 <li class="circle">org.tasktide.parser.<a href="org/tasktide/parser/CliParserMap.html" class="type-name-link" title="class in org.tasktide.parser">CliParserMap</a></li>
 <li class="circle">org.tasktide.core.manager.command.<a href="org/tasktide/core/manager/command/CommandSpec.html" class="type-name-link" title="class in org.tasktide.core.manager.command">CommandSpec</a></li>
 <li class="circle">org.tasktide.core.manager.command.<a href="org/tasktide/core/manager/command/CommandSpecBuilder.html" class="type-name-link" title="class in org.tasktide.core.manager.command">CommandSpecBuilder</a></li>
-<li class="circle">org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/Compression.html" class="type-name-link" title="class in org.tasktide.core.repository.json_repo">Compression</a></li>
 <li class="circle">org.tasktide.core.supporting.<a href="org/tasktide/core/supporting/ConfigUtil.html" class="type-name-link" title="class in org.tasktide.core.supporting">ConfigUtil</a></li>
 <li class="circle">org.tasktide.core.model.<a href="org/tasktide/core/model/CustomAnnotation.html" class="type-name-link" title="class in org.tasktide.core.model">CustomAnnotation</a> (implements org.tasktide.core.<a href="org/tasktide/core/TaskTideModel.html" title="interface in org.tasktide.core">TaskTideModel</a>&lt;T&gt;)</li>
 <li class="circle">org.tasktide.core.model.<a href="org/tasktide/core/model/CustomAnnotationJpaConverter.html" class="type-name-link" title="class in org.tasktide.core.model">CustomAnnotationJpaConverter</a> (implements jakarta.persistence.AttributeConverter&lt;X,<wbr>Y&gt;)</li>
@@ -267,16 +276,6 @@ loadScripts(document, 'script');</script>
 </ul>
 </li>
 <li class="circle">org.tasktide.itemstore.<a href="org/tasktide/itemstore/Item.html" class="type-name-link" title="class in org.tasktide.itemstore">Item</a>&lt;T&gt;</li>
-<li class="circle">org.tasktide.core.repository.<a href="org/tasktide/core/repository/ItemStoreRepository.html" class="type-name-link" title="class in org.tasktide.core.repository">ItemStoreRepository</a>&lt;T&gt; (implements org.tasktide.core.<a href="org/tasktide/core/TaskTideRepository.html" title="interface in org.tasktide.core">TaskTideRepository</a>&lt;T&gt;)
-<ul>
-<li class="circle">org.tasktide.core.repository.itemstore_repo.<a href="org/tasktide/core/repository/itemstore_repo/ItemStoreJobEnvironmentRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.itemstore_repo">ItemStoreJobEnvironmentRepository</a></li>
-<li class="circle">org.tasktide.core.repository.itemstore_repo.<a href="org/tasktide/core/repository/itemstore_repo/ItemStoreMetricDataRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.itemstore_repo">ItemStoreMetricDataRepository</a></li>
-<li class="circle">org.tasktide.core.repository.itemstore_repo.<a href="org/tasktide/core/repository/itemstore_repo/ItemStoreMetricProfileRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.itemstore_repo">ItemStoreMetricProfileRepository</a></li>
-<li class="circle">org.tasktide.core.repository.itemstore_repo.<a href="org/tasktide/core/repository/itemstore_repo/ItemStoreStepRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.itemstore_repo">ItemStoreStepRepository</a></li>
-<li class="circle">org.tasktide.core.repository.itemstore_repo.<a href="org/tasktide/core/repository/itemstore_repo/ItemStoreWorkflowRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.itemstore_repo">ItemStoreWorkflowRepository</a></li>
-<li class="circle">org.tasktide.core.repository.itemstore_repo.<a href="org/tasktide/core/repository/itemstore_repo/ItemStoreWorkItemRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.itemstore_repo">ItemStoreWorkItemRepository</a></li>
-</ul>
-</li>
 <li class="circle">org.tasktide.core.repository.itemstore_repo.<a href="org/tasktide/core/repository/itemstore_repo/ItemStoreRepositoryUtility.html" class="type-name-link" title="class in org.tasktide.core.repository.itemstore_repo">ItemStoreRepositoryUtility</a></li>
 <li class="circle">org.tasktide.itemstore.<a href="org/tasktide/itemstore/ItemStoreUtils.html" class="type-name-link" title="class in org.tasktide.itemstore">ItemStoreUtils</a></li>
 <li class="circle">org.tasktide.core.model.task.<a href="org/tasktide/core/model/task/ItemTask.html" class="type-name-link" title="class in org.tasktide.core.model.task">ItemTask</a> (implements org.tasktide.core.<a href="org/tasktide/core/TaskTideModel.html" title="interface in org.tasktide.core">TaskTideModel</a>&lt;T&gt;)</li>
@@ -289,15 +288,6 @@ loadScripts(document, 'script');</script>
 <li class="circle">org.tasktide.api.resources.services.rest.<a href="org/tasktide/api/resources/services/rest/JobEnvironmentRestResource.html" class="type-name-link" title="class in org.tasktide.api.resources.services.rest">JobEnvironmentRestResource</a></li>
 <li class="circle">org.tasktide.core.repository.jpa_repo.<a href="org/tasktide/core/repository/jpa_repo/JpaRepositoryUtility.html" class="type-name-link" title="class in org.tasktide.core.repository.jpa_repo">JpaRepositoryUtility</a></li>
 <li class="circle">org.tasktide.core.manager.<a href="org/tasktide/core/manager/JsonbManagerTaskWorkItemAdapter.html" class="type-name-link" title="class in org.tasktide.core.manager">JsonbManagerTaskWorkItemAdapter</a> (implements jakarta.json.bind.adapter.JsonbAdapter&lt;Original,<wbr>Adapted&gt;)</li>
-<li class="circle">org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" class="type-name-link" title="class in org.tasktide.core.repository">JsonRepository</a>&lt;T&gt; (implements org.tasktide.core.<a href="org/tasktide/core/TaskTideRepository.html" title="interface in org.tasktide.core">TaskTideRepository</a>&lt;T&gt;)
-<ul>
-<li class="circle">org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/JsonJobEnvironmentRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.json_repo">JsonJobEnvironmentRepository</a></li>
-<li class="circle">org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/JsonMetricProfileRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.json_repo">JsonMetricProfileRepository</a></li>
-<li class="circle">org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/JsonStepRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.json_repo">JsonStepRepository</a></li>
-<li class="circle">org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/JsonWorkflowRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.json_repo">JsonWorkflowRepository</a></li>
-<li class="circle">org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/JsonWorkItemRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.json_repo">JsonWorkItemRepository</a></li>
-</ul>
-</li>
 <li class="circle">org.tasktide.core.supporting.<a href="org/tasktide/core/supporting/JsonUtils.html" class="type-name-link" title="class in org.tasktide.core.supporting">JsonUtils</a></li>
 <li class="circle">org.tasktide.api.auth.<a href="org/tasktide/api/auth/JwtSecurityContext.html" class="type-name-link" title="class in org.tasktide.api.auth">JwtSecurityContext</a> (implements jakarta.ws.rs.core.SecurityContext)</li>
 <li class="circle">org.tasktide.core.manager.<a href="org/tasktide/core/manager/ManagerTask.html" class="type-name-link" title="class in org.tasktide.core.manager">ManagerTask</a></li>
@@ -512,7 +502,6 @@ loadScripts(document, 'script');</script>
 <li class="circle">org.tasktide.tasktide.client.config.dependents.<a href="org/tasktide/tasktide/client/config/dependents/JNoSqlType.html" class="type-name-link" title="enum class in org.tasktide.tasktide.client.config.dependents">JNoSqlType</a></li>
 <li class="circle">org.tasktide.core.model.job_env.<a href="org/tasktide/core/model/job_env/JobState.html" class="type-name-link" title="enum class in org.tasktide.core.model.job_env">JobState</a></li>
 <li class="circle">org.tasktide.core.model.job_env.<a href="org/tasktide/core/model/job_env/JobType.html" class="type-name-link" title="enum class in org.tasktide.core.model.job_env">JobType</a></li>
-<li class="circle">org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/JsonRepoType.html" class="type-name-link" title="enum class in org.tasktide.core.repository.json_repo">JsonRepoType</a></li>
 <li class="circle">org.tasktide.mutex.strategy.<a href="org/tasktide/mutex/strategy/LoopDecision.html" class="type-name-link" title="enum class in org.tasktide.mutex.strategy">LoopDecision</a></li>
 <li class="circle">org.tasktide.core.manager.command.<a href="org/tasktide/core/manager/command/ManagerAction.html" class="type-name-link" title="enum class in org.tasktide.core.manager.command">ManagerAction</a></li>
 <li class="circle">org.tasktide.core.manager.command.<a href="org/tasktide/core/manager/command/ManagerTarget.html" class="type-name-link" title="enum class in org.tasktide.core.manager.command">ManagerTarget</a></li>

@@ -29,6 +29,7 @@ loadScripts(document, 'script');</script>
 <ul id="navbar-top-firstrow" class="nav-list" title="Navigation">
 <li><a href="index.html">Overview</a></li>
 <li><a href="overview-tree.html">Tree</a></li>
+<li><a href="deprecated-list.html">Deprecated</a></li>
 <li class="nav-bar-cell1-rev">Index</li>
 <li><a href="search.html">Search</a></li>
 <li><a href="help-doc.html#index">Help</a></li>
@@ -59,7 +60,9 @@ loadScripts(document, 'script');</script>
 <div class="block">Blanket abort method for container requests</div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutionState.html#ABORTED" class="member-name-link">ABORTED</a> - Enum constant in enum class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutionState.html" title="enum class in org.tasktide.engine.trackers">ExecutionState</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="org/tasktide/engine/policies/AbstractAcquisitionPolicy.html" class="type-name-link" title="class in org.tasktide.engine.policies">AbstractAcquisitionPolicy</a> - Class in <a href="org/tasktide/engine/policies/package-summary.html">org.tasktide.engine.policies</a></dt>
 <dd>
 <div class="block">Abstract implementation of <a href="org/tasktide/engine/policies/TaskTideWorkloadAcquisitionPolicy.html" title="interface in org.tasktide.engine.policies"><code>TaskTideWorkloadAcquisitionPolicy</code></a>
@@ -97,7 +100,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Abstract class to implement shared logic</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/AbstractRepository.html#%3Cinit%3E(java.lang.Class,java.lang.String,org.tasktide.core.repository.RepositoryType)" class="member-name-link">AbstractRepository(Class, String, RepositoryType)</a> - Constructor for class org.tasktide.core.repository.<a href="org/tasktide/core/repository/AbstractRepository.html" title="class in org.tasktide.core.repository">AbstractRepository</a></dt>
+<dt><a href="org/tasktide/core/repository/AbstractRepository.html#%3Cinit%3E(org.tasktide.core.TaskTideModelType,java.lang.Class,java.lang.String,org.tasktide.core.repository.RepositoryType)" class="member-name-link">AbstractRepository(TaskTideModelType, Class, String, RepositoryType)</a> - Constructor for class org.tasktide.core.repository.<a href="org/tasktide/core/repository/AbstractRepository.html" title="class in org.tasktide.core.repository">AbstractRepository</a></dt>
 <dd>
 <div class="block">Construct with target model class, and collection name</div>
 </dd>
@@ -920,11 +923,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/repository/AbstractRepository.html#COLLECTION_CLASS" class="member-name-link">COLLECTION_CLASS</a> - Variable in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/AbstractRepository.html" title="class in org.tasktide.core.repository">AbstractRepository</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#COLLECTION_CLASS" class="member-name-link">COLLECTION_CLASS</a> - Variable in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/repository/AbstractRepository.html#collectionName" class="member-name-link">collectionName</a> - Variable in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/AbstractRepository.html" title="class in org.tasktide.core.repository">AbstractRepository</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#collectionName" class="member-name-link">collectionName</a> - Variable in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/tasktide/client/config/dependents/JNoSqlType.html#COLUMN" class="member-name-link">COLUMN</a> - Enum constant in enum class org.tasktide.tasktide.client.config.dependents.<a href="org/tasktide/tasktide/client/config/dependents/JNoSqlType.html" title="enum class in org.tasktide.tasktide.client.config.dependents">JNoSqlType</a></dt>
 <dd>&nbsp;</dd>
@@ -957,27 +956,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/tasktide/core/model/job_env/JobState.html#COMPLETED" class="member-name-link">COMPLETED</a> - Enum constant in enum class org.tasktide.core.model.job_env.<a href="org/tasktide/core/model/job_env/JobState.html" title="enum class in org.tasktide.core.model.job_env">JobState</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutionState.html#COMPLETED" class="member-name-link">COMPLETED</a> - Enum constant in enum class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutionState.html" title="enum class in org.tasktide.engine.trackers">ExecutionState</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/Compression.html#compress(java.lang.String)" class="member-name-link">compress(String)</a> - Method in class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/Compression.html" title="class in org.tasktide.core.repository.json_repo">Compression</a></dt>
 <dd>
-<div class="block">GZIP input string</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/Compression.html#compressDB(java.util.Map)" class="member-name-link">compressDB(Map)</a> - Method in class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/Compression.html" title="class in org.tasktide.core.repository.json_repo">Compression</a></dt>
-<dd>
-<div class="block">Compress a database of JSON Arrays</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/Compression.html" class="type-name-link" title="class in org.tasktide.core.repository.json_repo">Compression</a> - Class in <a href="org/tasktide/core/repository/json_repo/package-summary.html">org.tasktide.core.repository.json_repo</a></dt>
-<dd>
-<div class="block">Class to support json file I/O (de)compression</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/Compression.html#%3Cinit%3E()" class="member-name-link">Compression()</a> - Constructor for class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/Compression.html" title="class in org.tasktide.core.repository.json_repo">Compression</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/Compression.html#compressToFile(java.lang.String,java.lang.String)" class="member-name-link">compressToFile(String, String)</a> - Method in class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/Compression.html" title="class in org.tasktide.core.repository.json_repo">Compression</a></dt>
-<dd>
-<div class="block">Compress input to file</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#compUtil" class="member-name-link">compUtil</a> - Variable in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>&nbsp;</dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="org/tasktide/mutex/utils/DefaultMutexPaths.html#config()" class="member-name-link">config()</a> - Static method in class org.tasktide.mutex.utils.<a href="org/tasktide/mutex/utils/DefaultMutexPaths.html" title="class in org.tasktide.mutex.utils">DefaultMutexPaths</a></dt>
 <dd>
 <div class="block">Config paths</div>
@@ -1156,14 +1137,17 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html#countActive()" class="member-name-link">countActive()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Count active elements</div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html#countComplete()" class="member-name-link">countComplete()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Count done and terminated elements</div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html#countDone()" class="member-name-link">countDone()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Count done elements</div>
 </dd>
 <dt><a href="org/tasktide/engine/policies/AbstractAcquisitionPolicy.html#counter" class="member-name-link">counter</a> - Variable in class org.tasktide.engine.policies.<a href="org/tasktide/engine/policies/AbstractAcquisitionPolicy.html" title="class in org.tasktide.engine.policies">AbstractAcquisitionPolicy</a></dt>
@@ -1172,11 +1156,11 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/engine/worker/TaskTideEngineUtility.html#countNotActiveItemTask(java.util.List)" class="member-name-link">countNotActiveItemTask(List)</a> - Static method in class org.tasktide.engine.worker.<a href="org/tasktide/engine/worker/TaskTideEngineUtility.html" title="class in org.tasktide.engine.worker">TaskTideEngineUtility</a></dt>
 <dd>
-<div class="block">Scan tasks for count of done</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 </dd>
 <dt><a href="org/tasktide/engine/worker/TaskTideEngineUtility.html#countNotActiveWorkItem(java.util.List)" class="member-name-link">countNotActiveWorkItem(List)</a> - Static method in class org.tasktide.engine.worker.<a href="org/tasktide/engine/worker/TaskTideEngineUtility.html" title="class in org.tasktide.engine.worker">TaskTideEngineUtility</a></dt>
 <dd>
-<div class="block">Count non-pending tasks across <a href="org/tasktide/core/model/workitem/WorkItem.html" title="class in org.tasktide.core.model.workitem"><code>WorkItem</code></a> list</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 </dd>
 <dt><a href="org/tasktide/core/repository/JpaRepository.html#countRecords()" class="member-name-link">countRecords()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JpaRepository.html" title="class in org.tasktide.core.repository">JpaRepository</a></dt>
 <dd>
@@ -1388,14 +1372,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>
 <div class="block">Decode base64 encode token</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/json_repo/Compression.html#decompress(byte%5B%5D)" class="member-name-link">decompress(byte[])</a> - Method in class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/Compression.html" title="class in org.tasktide.core.repository.json_repo">Compression</a></dt>
-<dd>
-<div class="block">Decompress input string</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/Compression.html#decompressFromFile(java.lang.String)" class="member-name-link">decompressFromFile(String)</a> - Method in class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/Compression.html" title="class in org.tasktide.core.repository.json_repo">Compression</a></dt>
-<dd>
-<div class="block">Decompress file to string</div>
-</dd>
 <dt><a href="org/tasktide/engine/executor/TaskTideExecutor.html#decrementCount()" class="member-name-link">decrementCount()</a> - Method in class org.tasktide.engine.executor.<a href="org/tasktide/engine/executor/TaskTideExecutor.html" title="class in org.tasktide.engine.executor">TaskTideExecutor</a></dt>
 <dd>
 <div class="block">Decrement count</div>
@@ -1449,10 +1425,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dt><a href="org/tasktide/core/repository/JpaRepository.html#deleteModel(java.lang.String)" class="member-name-link">deleteModel(String)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JpaRepository.html" title="class in org.tasktide.core.repository">JpaRepository</a></dt>
 <dd>
 <div class="block">Remove model with provided id</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#deleteModel(java.lang.String)" class="member-name-link">deleteModel(String)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Delete model by provided id</div>
 </dd>
 <dt><a href="org/tasktide/core/repository/template_repo/TemplateWorkflowRepository.html#deleteModel(java.lang.String)" class="member-name-link">deleteModel(String)</a> - Method in class org.tasktide.core.repository.template_repo.<a href="org/tasktide/core/repository/template_repo/TemplateWorkflowRepository.html" title="class in org.tasktide.core.repository.template_repo">TemplateWorkflowRepository</a></dt>
 <dd>
@@ -1809,7 +1781,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutionState.html" class="type-name-link" title="enum class in org.tasktide.engine.trackers">ExecutionState</a> - Enum Class in <a href="org/tasktide/engine/trackers/package-summary.html">org.tasktide.engine.trackers</a></dt>
 <dd>
-<div class="block">Enum to support worker execution states</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 </dd>
 <dt><a href="org/tasktide/engine/observer/worker/TimeKeeperObserver.html#executionTimes" class="member-name-link">executionTimes</a> - Variable in class org.tasktide.engine.observer.worker.<a href="org/tasktide/engine/observer/worker/TimeKeeperObserver.html" title="class in org.tasktide.engine.observer.worker">TimeKeeperObserver</a></dt>
 <dd>&nbsp;</dd>
@@ -1825,17 +1797,16 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceItem.html" class="type-name-link" title="class in org.tasktide.engine.trackers">ExecutorServiceItem&lt;T&gt;</a> - Class in <a href="org/tasktide/engine/trackers/package-summary.html">org.tasktide.engine.trackers</a></dt>
 <dd>
-<div class="block">Holds reference for the future <a href="org/tasktide/core/TaskTideModel.html" title="interface in org.tasktide.core"><code>TaskTideModel</code></a> so that
- their processing can be tracked as a collection.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceItem.html#%3Cinit%3E(org.tasktide.core.TaskTideModel,java.util.concurrent.Future)" class="member-name-link">ExecutorServiceItem(TaskTideModel, Future)</a> - Constructor for class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceItem.html" title="class in org.tasktide.engine.trackers">ExecutorServiceItem</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Construct with task and future</div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" class="type-name-link" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker&lt;T&gt;</a> - Class in <a href="org/tasktide/engine/trackers/package-summary.html">org.tasktide.engine.trackers</a></dt>
 <dd>
-<div class="block">Generic class to hold logic for tracking futures of <a href="org/tasktide/core/TaskTideModel.html" title="interface in org.tasktide.core"><code>TaskTideModel</code></a>
- elements (ie <a href="org/tasktide/core/model/task/ItemTask.html" title="class in org.tasktide.core.model.task"><code>ItemTask</code></a>, <a href="org/tasktide/core/model/workitem/WorkItem.html" title="class in org.tasktide.core.model.workitem"><code>WorkItem</code></a>) as <a href="org/tasktide/engine/trackers/ExecutorServiceItem.html" title="class in org.tasktide.engine.trackers"><code>ExecutorServiceItem</code></a>.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 </dd>
 <dt><a href="org/tasktide/engine/policies/workflow/WorkflowStrategyMode.html#EXHAUST" class="member-name-link">EXHAUST</a> - Enum constant in enum class org.tasktide.engine.policies.workflow.<a href="org/tasktide/engine/policies/workflow/WorkflowStrategyMode.html" title="enum class in org.tasktide.engine.policies.workflow">WorkflowStrategyMode</a></dt>
 <dd>&nbsp;</dd>
@@ -1888,10 +1859,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>
 <div class="block">Insert provided records</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#extendModel(java.util.List)" class="member-name-link">extendModel(List)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Import provided model list, measuring imported count against expected</div>
-</dd>
 <dt><a href="org/tasktide/core/repository/TemplateRepository.html#extendModel(java.util.List)" class="member-name-link">extendModel(List)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/TemplateRepository.html" title="class in org.tasktide.core.repository">TemplateRepository</a></dt>
 <dd>
 <div class="block">Batch import provided list of records</div>
@@ -1921,7 +1888,9 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dt><a href="org/tasktide/core/manager/generator/HostList.html#FACEBOOK" class="member-name-link">FACEBOOK</a> - Enum constant in enum class org.tasktide.core.manager.generator.<a href="org/tasktide/core/manager/generator/HostList.html" title="enum class in org.tasktide.core.manager.generator">HostList</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutionState.html#FAILED" class="member-name-link">FAILED</a> - Enum constant in enum class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutionState.html" title="enum class in org.tasktide.engine.trackers">ExecutionState</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="org/tasktide/engine/observer/ObserverResult.html#failure(org.tasktide.engine.observer.WorkerObserver)" class="member-name-link">failure(WorkerObserver)</a> - Static method in class org.tasktide.engine.observer.<a href="org/tasktide/engine/observer/ObserverResult.html" title="class in org.tasktide.engine.observer">ObserverResult</a></dt>
 <dd>
 <div class="block">Create failed observer result</div>
@@ -1995,6 +1964,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html#fetchDone()" class="member-name-link">fetchDone()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Fetch list of completed Ids</div>
 </dd>
 <dt><a href="org/tasktide/core/model/state_summary/ItemState.html#fetchEmptyStateMap()" class="member-name-link">fetchEmptyStateMap()</a> - Static method in enum class org.tasktide.core.model.state_summary.<a href="org/tasktide/core/model/state_summary/ItemState.html" title="enum class in org.tasktide.core.model.state_summary">ItemState</a></dt>
@@ -2019,6 +1989,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html#fetchEntrySet()" class="member-name-link">fetchEntrySet()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Fetch entry set</div>
 </dd>
 <dt><a href="org/tasktide/core/manager/TaskTideManagerUtility.html#fetchEnvs(org.tasktide.core.model.job_env.JobEnvironment,boolean)" class="member-name-link">fetchEnvs(JobEnvironment, boolean)</a> - Static method in class org.tasktide.core.manager.<a href="org/tasktide/core/manager/TaskTideManagerUtility.html" title="class in org.tasktide.core.manager">TaskTideManagerUtility</a></dt>
@@ -2027,11 +1998,11 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/worker/TaskTideEngineUtility.html#fetchExecutionTimes(java.util.List,org.apache.logging.log4j.Logger)" class="member-name-link">fetchExecutionTimes(List, Logger)</a> - Static method in class org.tasktide.engine.worker.<a href="org/tasktide/engine/worker/TaskTideEngineUtility.html" title="class in org.tasktide.engine.worker">TaskTideEngineUtility</a></dt>
 <dd>
-<div class="block">Log execution times on INFO level</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 </dd>
 <dt><a href="org/tasktide/engine/worker/TaskTideEngineUtility.html#fetchExecutionTimesWorkItem(java.util.List,org.apache.logging.log4j.Logger)" class="member-name-link">fetchExecutionTimesWorkItem(List, Logger)</a> - Static method in class org.tasktide.engine.worker.<a href="org/tasktide/engine/worker/TaskTideEngineUtility.html" title="class in org.tasktide.engine.worker">TaskTideEngineUtility</a></dt>
 <dd>
-<div class="block">Fetch execution times across all</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 </dd>
 <dt><a href="org/tasktide/mutex/model/MutexFileType.html#fetchFileFromConstants(org.tasktide.mutex.model.MutexFileType)" class="member-name-link">fetchFileFromConstants(MutexFileType)</a> - Static method in enum class org.tasktide.mutex.model.<a href="org/tasktide/mutex/model/MutexFileType.html" title="enum class in org.tasktide.mutex.model">MutexFileType</a></dt>
 <dd>
@@ -2121,8 +2092,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>
 <div class="block">Fetch path for file</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/json_repo/JsonRepoType.html#fetchRepo(java.lang.String)" class="member-name-link">fetchRepo(String)</a> - Method in enum class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/JsonRepoType.html" title="enum class in org.tasktide.core.repository.json_repo">JsonRepoType</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/tasktide/tasktide/client/TaskTideClientUtility.html#fetchRepoType(org.tasktide.tasktide.client.ClientConfigMap)" class="member-name-link">fetchRepoType(ClientConfigMap)</a> - Static method in class org.tasktide.tasktide.client.<a href="org/tasktide/tasktide/client/TaskTideClientUtility.html" title="class in org.tasktide.tasktide.client">TaskTideClientUtility</a></dt>
 <dd>
 <div class="block">Fetches the <a href="org/tasktide/core/repository/RepositoryType.html" title="enum class in org.tasktide.core.repository"><code>RepositoryType</code></a> from the <a href="org/tasktide/tasktide/client/config/GlobalConfig.html" title="class in org.tasktide.tasktide.client.config"><code>GlobalConfig</code></a>.</div>
@@ -2165,6 +2134,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html#fetchWaiterFor(java.util.List)" class="member-name-link">fetchWaiterFor(List)</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Fetch a <a href="org/tasktide/engine/trackers/TrackerWaiter.html" title="class in org.tasktide.engine.trackers"><code>TrackerWaiter</code></a> for provided workload</div>
 </dd>
 <dt><a href="org/tasktide/core/manager/TaskTideManagerUtility.html#fetchWorkflowForName(java.lang.String)" class="member-name-link">fetchWorkflowForName(String)</a> - Static method in class org.tasktide.core.manager.<a href="org/tasktide/core/manager/TaskTideManagerUtility.html" title="class in org.tasktide.core.manager">TaskTideManagerUtility</a></dt>
@@ -2265,10 +2235,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>
 <div class="block">Filters records with provided annotation key and value</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#filterByAnnotation(java.lang.String,java.lang.Object)" class="member-name-link">filterByAnnotation(String, Object)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Filters records with provided annotation key and value</div>
-</dd>
 <dt><a href="org/tasktide/core/repository/template_repo/TemplateWorkflowRepository.html#filterByAnnotation(java.lang.String,java.lang.Object)" class="member-name-link">filterByAnnotation(String, Object)</a> - Method in class org.tasktide.core.repository.template_repo.<a href="org/tasktide/core/repository/template_repo/TemplateWorkflowRepository.html" title="class in org.tasktide.core.repository.template_repo">TemplateWorkflowRepository</a></dt>
 <dd>
 <div class="block">Filters records with provided annotation key and value</div>
@@ -2282,10 +2248,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <div class="block">Filters records with provided <a href="org/tasktide/core/model/CustomAnnotation.html" title="class in org.tasktide.core.model"><code>CustomAnnotation</code></a></div>
 </dd>
 <dt><a href="org/tasktide/core/repository/ItemStoreRepository.html#filterByAnnotation(org.tasktide.core.model.CustomAnnotation)" class="member-name-link">filterByAnnotation(CustomAnnotation)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/ItemStoreRepository.html" title="class in org.tasktide.core.repository">ItemStoreRepository</a></dt>
-<dd>
-<div class="block">Filters records with provided <a href="org/tasktide/core/model/CustomAnnotation.html" title="class in org.tasktide.core.model"><code>CustomAnnotation</code></a></div>
-</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#filterByAnnotation(org.tasktide.core.model.CustomAnnotation)" class="member-name-link">filterByAnnotation(CustomAnnotation)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
 <dd>
 <div class="block">Filters records with provided <a href="org/tasktide/core/model/CustomAnnotation.html" title="class in org.tasktide.core.model"><code>CustomAnnotation</code></a></div>
 </dd>
@@ -2304,10 +2266,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dt><a href="org/tasktide/core/repository/JpaRepository.html#findAll()" class="member-name-link">findAll()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JpaRepository.html" title="class in org.tasktide.core.repository">JpaRepository</a></dt>
 <dd>
 <div class="block">Fetch all records</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#findAll()" class="member-name-link">findAll()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Return dataset</div>
 </dd>
 <dt><a href="org/tasktide/core/repository/template_repo/TemplateWorkflowRepository.html#findAll()" class="member-name-link">findAll()</a> - Method in class org.tasktide.core.repository.template_repo.<a href="org/tasktide/core/repository/template_repo/TemplateWorkflowRepository.html" title="class in org.tasktide.core.repository.template_repo">TemplateWorkflowRepository</a></dt>
 <dd>
@@ -2337,10 +2295,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>
 <div class="block">Find records where provided field '==' value</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#findByField(java.lang.String,java.lang.Object)" class="member-name-link">findByField(String, Object)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Return list of models with field matching value</div>
-</dd>
 <dt><a href="org/tasktide/core/repository/template_repo/TemplateWorkflowRepository.html#findByField(java.lang.String,java.lang.Object)" class="member-name-link">findByField(String, Object)</a> - Method in class org.tasktide.core.repository.template_repo.<a href="org/tasktide/core/repository/template_repo/TemplateWorkflowRepository.html" title="class in org.tasktide.core.repository.template_repo">TemplateWorkflowRepository</a></dt>
 <dd>
 <div class="block">Generic method to find list of WorkItems by field equally value</div>
@@ -2359,11 +2313,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
  having specified value.</div>
 </dd>
 <dt><a href="org/tasktide/core/repository/JpaRepository.html#findByFieldForGroup(java.lang.String,java.lang.Object,java.lang.String,java.lang.Object)" class="member-name-link">findByFieldForGroup(String, Object, String, Object)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JpaRepository.html" title="class in org.tasktide.core.repository">JpaRepository</a></dt>
-<dd>
-<div class="block">Find <a href="org/tasktide/core/TaskTideModel.html" title="interface in org.tasktide.core"><code>TaskTideModel</code></a> from backend with field and group
- having specified value.</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#findByFieldForGroup(java.lang.String,java.lang.Object,java.lang.String,java.lang.Object)" class="member-name-link">findByFieldForGroup(String, Object, String, Object)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
 <dd>
 <div class="block">Find <a href="org/tasktide/core/TaskTideModel.html" title="interface in org.tasktide.core"><code>TaskTideModel</code></a> from backend with field and group
  having specified value.</div>
@@ -2391,10 +2340,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>
 <div class="block">Extends collection, state query with annotation filtering</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#findByFieldForGroupWithAnno(java.lang.String,java.lang.Object,java.lang.String,java.lang.Object,java.lang.String,java.lang.Object)" class="member-name-link">findByFieldForGroupWithAnno(String, Object, String, Object, String, Object)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Extends collection, state query with annotation filtering</div>
-</dd>
 <dt><a href="org/tasktide/core/repository/template_repo/TemplateWorkflowRepository.html#findByFieldForGroupWithAnno(java.lang.String,java.lang.Object,java.lang.String,java.lang.Object,java.lang.String,java.lang.Object)" class="member-name-link">findByFieldForGroupWithAnno(String, Object, String, Object, String, Object)</a> - Method in class org.tasktide.core.repository.template_repo.<a href="org/tasktide/core/repository/template_repo/TemplateWorkflowRepository.html" title="class in org.tasktide.core.repository.template_repo">TemplateWorkflowRepository</a></dt>
 <dd>
 <div class="block">Extends collection, state query with annotation filtering</div>
@@ -2409,10 +2354,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <div class="block">Extends collection, state query with annotation filtering</div>
 </dd>
 <dt><a href="org/tasktide/core/repository/ItemStoreRepository.html#findByFieldForGroupWithAnno(java.lang.String,java.lang.Object,java.lang.String,java.lang.Object,org.tasktide.core.model.CustomAnnotation)" class="member-name-link">findByFieldForGroupWithAnno(String, Object, String, Object, CustomAnnotation)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/ItemStoreRepository.html" title="class in org.tasktide.core.repository">ItemStoreRepository</a></dt>
-<dd>
-<div class="block">Extends collection, state query with annotation filtering</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#findByFieldForGroupWithAnno(java.lang.String,java.lang.Object,java.lang.String,java.lang.Object,org.tasktide.core.model.CustomAnnotation)" class="member-name-link">findByFieldForGroupWithAnno(String, Object, String, Object, CustomAnnotation)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
 <dd>
 <div class="block">Extends collection, state query with annotation filtering</div>
 </dd>
@@ -2432,10 +2373,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dt><a href="org/tasktide/core/repository/JpaRepository.html#findById(java.lang.String)" class="member-name-link">findById(String)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JpaRepository.html" title="class in org.tasktide.core.repository">JpaRepository</a></dt>
 <dd>
 <div class="block">Find the <a href="org/tasktide/core/TaskTideModel.html" title="interface in org.tasktide.core"><code>TaskTideModel</code></a> having id</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#findById(java.lang.String)" class="member-name-link">findById(String)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Search for Items by Id</div>
 </dd>
 <dt><a href="org/tasktide/core/repository/template_repo/TemplateWorkflowRepository.html#findById(java.lang.String)" class="member-name-link">findById(String)</a> - Method in class org.tasktide.core.repository.template_repo.<a href="org/tasktide/core/repository/template_repo/TemplateWorkflowRepository.html" title="class in org.tasktide.core.repository.template_repo">TemplateWorkflowRepository</a></dt>
 <dd>
@@ -2489,8 +2426,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/FutureTrackers.html" class="type-name-link" title="class in org.tasktide.engine.trackers">FutureTrackers</a> - Class in <a href="org/tasktide/engine/trackers/package-summary.html">org.tasktide.engine.trackers</a></dt>
 <dd>
-<div class="block">Holder class for <a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers"><code>ExecutorServiceTracker</code></a> for <a href="org/tasktide/core/model/task/ItemTask.html" title="class in org.tasktide.core.model.task"><code>ItemTask</code></a>, and
- <a href="org/tasktide/core/model/workitem/WorkItem.html" title="class in org.tasktide.core.model.workitem"><code>WorkItem</code></a></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 </dd>
 </dl>
 <h2 class="title" id="I:G">G</h2>
@@ -2670,10 +2606,12 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html#get(java.lang.String)" class="member-name-link">get(String)</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Fetch future of task</div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TaskTracker.html#get(java.lang.String)" class="member-name-link">get(String)</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TaskTracker.html" title="class in org.tasktide.engine.trackers">TaskTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Fetch state of task</div>
 </dd>
 <dt><a href="org/tasktide/engine/workerunit/TaskTideWorkerUnitType.html#get(java.lang.String)" class="member-name-link">get(String)</a> - Static method in enum class org.tasktide.engine.workerunit.<a href="org/tasktide/engine/workerunit/TaskTideWorkerUnitType.html" title="enum class in org.tasktide.engine.workerunit">TaskTideWorkerUnitType</a></dt>
@@ -2762,6 +2700,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TrackerWaiter.html#getActive()" class="member-name-link">getActive()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TrackerWaiter.html" title="class in org.tasktide.engine.trackers">TrackerWaiter</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Return count of active</div>
 </dd>
 <dt><a href="org/tasktide/parser/generic_tree/GenericTreeNode.html#getAddress()" class="member-name-link">getAddress()</a> - Method in class org.tasktide.parser.generic_tree.<a href="org/tasktide/parser/generic_tree/GenericTreeNode.html" title="class in org.tasktide.parser.generic_tree">GenericTreeNode</a></dt>
@@ -3046,10 +2985,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>
 <div class="block">Get class of repository</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#getCollectionClass()" class="member-name-link">getCollectionClass()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Get class of repository</div>
-</dd>
 <dt><a href="org/tasktide/core/repository/AbstractRepository.html#getCollectionName()" class="member-name-link">getCollectionName()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/AbstractRepository.html" title="class in org.tasktide.core.repository">AbstractRepository</a></dt>
 <dd>
 <div class="block">Get collection name</div>
@@ -3057,10 +2992,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dt><a href="org/tasktide/core/repository/ItemStoreRepository.html#getCollectionName()" class="member-name-link">getCollectionName()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/ItemStoreRepository.html" title="class in org.tasktide.core.repository">ItemStoreRepository</a></dt>
 <dd>
 <div class="block">Return collection name</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#getCollectionName()" class="member-name-link">getCollectionName()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Get collection name</div>
 </dd>
 <dt><a href="org/tasktide/core/manager/command/ManagerAction.html#getCommandType()" class="member-name-link">getCommandType()</a> - Method in enum class org.tasktide.core.manager.command.<a href="org/tasktide/core/manager/command/ManagerAction.html" title="enum class in org.tasktide.core.manager.command">ManagerAction</a></dt>
 <dd>&nbsp;</dd>
@@ -3157,6 +3088,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TrackerWaiter.html#getDone()" class="member-name-link">getDone()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TrackerWaiter.html" title="class in org.tasktide.engine.trackers">TrackerWaiter</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Return count of done</div>
 </dd>
 <dt><a href="org/tasktide/core/model/workitem/WorkItem.html#getDoneDate()" class="member-name-link">getDoneDate()</a> - Method in class org.tasktide.core.model.workitem.<a href="org/tasktide/core/model/workitem/WorkItem.html" title="class in org.tasktide.core.model.workitem">WorkItem</a></dt>
@@ -3233,6 +3165,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TrackerWaiter.html#getFailed()" class="member-name-link">getFailed()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TrackerWaiter.html" title="class in org.tasktide.engine.trackers">TrackerWaiter</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Return count of failed</div>
 </dd>
 <dt><a href="org/tasktide/engine/observer/ObserverResult.html#getFailedObserver()" class="member-name-link">getFailedObserver()</a> - Method in class org.tasktide.engine.observer.<a href="org/tasktide/engine/observer/ObserverResult.html" title="class in org.tasktide.engine.observer">ObserverResult</a></dt>
@@ -3266,6 +3199,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceItem.html#getFuture()" class="member-name-link">getFuture()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceItem.html" title="class in org.tasktide.engine.trackers">ExecutorServiceItem</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Get the future</div>
 </dd>
 <dt><a href="org/tasktide/parser/Arguments.html#getGlobalArgument(java.lang.String)" class="member-name-link">getGlobalArgument(String)</a> - Method in class org.tasktide.parser.<a href="org/tasktide/parser/Arguments.html" title="class in org.tasktide.parser">Arguments</a></dt>
@@ -3418,6 +3352,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TrackerWaiter.html#getId()" class="member-name-link">getId()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TrackerWaiter.html" title="class in org.tasktide.engine.trackers">TrackerWaiter</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Fetch Id for waiter</div>
 </dd>
 <dt><a href="org/tasktide/itemstore/Item.html#getId()" class="member-name-link">getId()</a> - Method in class org.tasktide.itemstore.<a href="org/tasktide/itemstore/Item.html" title="class in org.tasktide.itemstore">Item</a></dt>
@@ -3434,6 +3369,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html#getIds()" class="member-name-link">getIds()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Get Ids from task states</div>
 </dd>
 <dt><a href="org/tasktide/parser/generic_tree/GenericTree.html#getImmutableChildren(org.tasktide.parser.generic_tree.GenericTreeNode)" class="member-name-link">getImmutableChildren(GenericTreeNode)</a> - Method in class org.tasktide.parser.generic_tree.<a href="org/tasktide/parser/generic_tree/GenericTree.html" title="class in org.tasktide.parser.generic_tree">GenericTree</a></dt>
@@ -3549,6 +3485,10 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>
 <div class="block">Gets current <a href="org/tasktide/core/model/job_env/JobState.html" title="enum class in org.tasktide.core.model.job_env"><code>JobState</code></a></div>
 </dd>
+<dt><a href="org/tasktide/core/model/job_env/JobEnvironment.html#getJobType()" class="member-name-link">getJobType()</a> - Method in class org.tasktide.core.model.job_env.<a href="org/tasktide/core/model/job_env/JobEnvironment.html" title="class in org.tasktide.core.model.job_env">JobEnvironment</a></dt>
+<dd>
+<div class="block">Get job jobType</div>
+</dd>
 <dt><a href="org/tasktide/core/supporting/JsonUtils.html#getJsonb(boolean)" class="member-name-link">getJsonb(boolean)</a> - Static method in class org.tasktide.core.supporting.<a href="org/tasktide/core/supporting/JsonUtils.html" title="class in org.tasktide.core.supporting">JsonUtils</a></dt>
 <dd>
 <div class="block">Provide JSON Binding to either (un)indented binder</div>
@@ -3647,8 +3587,13 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>
 <div class="block">Get metrics type</div>
 </dd>
+<dt><a href="org/tasktide/core/model/job_env/metrics/MetricProfile.html#getMetricType()" class="member-name-link">getMetricType()</a> - Method in class org.tasktide.core.model.job_env.metrics.<a href="org/tasktide/core/model/job_env/metrics/MetricProfile.html" title="class in org.tasktide.core.model.job_env.metrics">MetricProfile</a></dt>
+<dd>
+<div class="block">Get <a href="org/tasktide/core/model/job_env/metrics/MetricType.html" title="enum class in org.tasktide.core.model.job_env.metrics"><code>MetricType</code></a></div>
+</dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceItem.html#getModel()" class="member-name-link">getModel()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceItem.html" title="class in org.tasktide.engine.trackers">ExecutorServiceItem</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Get the model class</div>
 </dd>
 <dt><a href="org/tasktide/mutex/utils/MutexLabellingUtils.html#getMutexFileName()" class="member-name-link">getMutexFileName()</a> - Static method in class org.tasktide.mutex.utils.<a href="org/tasktide/mutex/utils/MutexLabellingUtils.html" title="class in org.tasktide.mutex.utils">MutexLabellingUtils</a></dt>
@@ -3893,20 +3838,11 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <div class="block">Provide a map of repository meta data reference class,
   repository type (NoSQL, RocksDB etc), collecion name</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#getRepositoryMetaData()" class="member-name-link">getRepositoryMetaData()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Provide a map of repository meta data reference class,
-  repository type (NoSQL, RocksDB etc), collecion name</div>
-</dd>
 <dt><a href="org/tasktide/core/TaskTideRepository.html#getRepositoryMetaData()" class="member-name-link">getRepositoryMetaData()</a> - Method in interface org.tasktide.core.<a href="org/tasktide/core/TaskTideRepository.html" title="interface in org.tasktide.core">TaskTideRepository</a></dt>
 <dd>
 <div class="block">Return a map of the repository metadata</div>
 </dd>
 <dt><a href="org/tasktide/core/repository/AbstractRepository.html#getRepoType()" class="member-name-link">getRepoType()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/AbstractRepository.html" title="class in org.tasktide.core.repository">AbstractRepository</a></dt>
-<dd>
-<div class="block">Get repository type</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#getRepoType()" class="member-name-link">getRepoType()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
 <dd>
 <div class="block">Get repository type</div>
 </dd>
@@ -3921,10 +3857,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <div class="block">Get results set size</div>
 </dd>
 <dt><a href="org/tasktide/core/repository/ItemStoreRepository.html#getResultSetSize()" class="member-name-link">getResultSetSize()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/ItemStoreRepository.html" title="class in org.tasktide.core.repository">ItemStoreRepository</a></dt>
-<dd>
-<div class="block">Get results set size</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#getResultSetSize()" class="member-name-link">getResultSetSize()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
 <dd>
 <div class="block">Get results set size</div>
 </dd>
@@ -4259,6 +4191,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TrackerWaiter.html#getTasks()" class="member-name-link">getTasks()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TrackerWaiter.html" title="class in org.tasktide.engine.trackers">TrackerWaiter</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Fetch tasks</div>
 </dd>
 <dt><a href="org/tasktide/core/manager/ManagerTask.html#getTaskScript()" class="member-name-link">getTaskScript()</a> - Method in class org.tasktide.core.manager.<a href="org/tasktide/core/manager/ManagerTask.html" title="class in org.tasktide.core.manager">ManagerTask</a></dt>
@@ -4325,14 +4258,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>
 <div class="block">Return tree to expose those methods</div>
 </dd>
-<dt><a href="org/tasktide/core/model/job_env/JobEnvironment.html#getType()" class="member-name-link">getType()</a> - Method in class org.tasktide.core.model.job_env.<a href="org/tasktide/core/model/job_env/JobEnvironment.html" title="class in org.tasktide.core.model.job_env">JobEnvironment</a></dt>
-<dd>
-<div class="block">Get job type</div>
-</dd>
-<dt><a href="org/tasktide/core/model/job_env/metrics/MetricProfile.html#getType()" class="member-name-link">getType()</a> - Method in class org.tasktide.core.model.job_env.metrics.<a href="org/tasktide/core/model/job_env/metrics/MetricProfile.html" title="class in org.tasktide.core.model.job_env.metrics">MetricProfile</a></dt>
-<dd>
-<div class="block">Get <a href="org/tasktide/core/model/job_env/metrics/MetricType.html" title="enum class in org.tasktide.core.model.job_env.metrics"><code>MetricType</code></a></div>
-</dd>
 <dt><a href="org/tasktide/engine/observer/ObserverResult.html#getType()" class="member-name-link">getType()</a> - Method in class org.tasktide.engine.observer.<a href="org/tasktide/engine/observer/ObserverResult.html" title="class in org.tasktide.engine.observer">ObserverResult</a></dt>
 <dd>
 <div class="block">Return <a href="org/tasktide/engine/observer/worker/ObserverType.html" title="enum class in org.tasktide.engine.observer.worker"><code>ObserverType</code></a></div>
@@ -4357,10 +4282,12 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html#getType()" class="member-name-link">getType()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Get class type of tracker</div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TrackerWaiter.html#getType()" class="member-name-link">getType()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TrackerWaiter.html" title="class in org.tasktide.engine.trackers">TrackerWaiter</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Fetch <a href="org/tasktide/core/TaskTideModel.html" title="interface in org.tasktide.core"><code>TaskTideModel</code></a> type for waiter</div>
 </dd>
 <dt><a href="org/tasktide/core/model/job_env/metrics/MetricData.html#getUnits()" class="member-name-link">getUnits()</a> - Method in class org.tasktide.core.model.job_env.metrics.<a href="org/tasktide/core/model/job_env/metrics/MetricData.html" title="class in org.tasktide.core.model.job_env.metrics">MetricData</a></dt>
@@ -4582,10 +4509,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>
 <div class="block">Filter records which have provided annotation key</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#hasAnnotationField(java.lang.String)" class="member-name-link">hasAnnotationField(String)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Filter records which have provided annotation key</div>
-</dd>
 <dt><a href="org/tasktide/core/repository/template_repo/TemplateWorkflowRepository.html#hasAnnotationField(java.lang.String)" class="member-name-link">hasAnnotationField(String)</a> - Method in class org.tasktide.core.repository.template_repo.<a href="org/tasktide/core/repository/template_repo/TemplateWorkflowRepository.html" title="class in org.tasktide.core.repository.template_repo">TemplateWorkflowRepository</a></dt>
 <dd>
 <div class="block">Filter records which have provided annotation key</div>
@@ -4789,6 +4712,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutionState.html#hasType(java.lang.String)" class="member-name-link">hasType(String)</a> - Static method in enum class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutionState.html" title="enum class in org.tasktide.engine.trackers">ExecutionState</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Check if queried type exists</div>
 </dd>
 <dt><a href="org/tasktide/engine/workerunit/container/WorkerUnitModelType.html#hasType(java.lang.String)" class="member-name-link">hasType(String)</a> - Static method in enum class org.tasktide.engine.workerunit.container.<a href="org/tasktide/engine/workerunit/container/WorkerUnitModelType.html" title="enum class in org.tasktide.engine.workerunit.container">WorkerUnitModelType</a></dt>
@@ -5004,6 +4928,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutionState.html#indexOf(java.lang.String)" class="member-name-link">indexOf(String)</a> - Static method in enum class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutionState.html" title="enum class in org.tasktide.engine.trackers">ExecutionState</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Return index of queried state</div>
 </dd>
 <dt><a href="org/tasktide/engine/workerunit/container/WorkerUnitModelType.html#indexOf(java.lang.String)" class="member-name-link">indexOf(String)</a> - Static method in enum class org.tasktide.engine.workerunit.container.<a href="org/tasktide/engine/workerunit/container/WorkerUnitModelType.html" title="enum class in org.tasktide.engine.workerunit.container">WorkerUnitModelType</a></dt>
@@ -5204,10 +5129,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>
 <div class="block">Insert record</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#insertModel(T)" class="member-name-link">insertModel(T)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Insert model, duplicates allowed</div>
-</dd>
 <dt><a href="org/tasktide/core/repository/TemplateRepository.html#insertModel(T)" class="member-name-link">insertModel(T)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/TemplateRepository.html" title="class in org.tasktide.core.repository">TemplateRepository</a></dt>
 <dd>
 <div class="block">Insert model into DB</div>
@@ -5245,10 +5166,12 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html#isActive(java.lang.String)" class="member-name-link">isActive(String)</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Check if task is still running or in prepare</div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TaskTracker.html#isActive(java.lang.String)" class="member-name-link">isActive(String)</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TaskTracker.html" title="class in org.tasktide.engine.trackers">TaskTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Check if task is still running or in prepare</div>
 </dd>
 <dt><a href="org/tasktide/engine/policies/resources/AcquisitionPolicyJsonResource.html#isAnnoString()" class="member-name-link">isAnnoString()</a> - Method in class org.tasktide.engine.policies.resources.<a href="org/tasktide/engine/policies/resources/AcquisitionPolicyJsonResource.html" title="class in org.tasktide.engine.policies.resources">AcquisitionPolicyJsonResource</a></dt>
@@ -5262,6 +5185,11 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dt><a href="org/tasktide/mutex/strategy/MutexStrategyType.html#isApplierStrategy(org.tasktide.mutex.strategy.MutexStrategyType)" class="member-name-link">isApplierStrategy(MutexStrategyType)</a> - Method in enum class org.tasktide.mutex.strategy.<a href="org/tasktide/mutex/strategy/MutexStrategyType.html" title="enum class in org.tasktide.mutex.strategy">MutexStrategyType</a></dt>
 <dd>
 <div class="block">Abstract method check if query is enum value</div>
+</dd>
+<dt><a href="org/tasktide/core/TaskTideModelType.html#isClassName(java.lang.String)" class="member-name-link">isClassName(String)</a> - Method in enum class org.tasktide.core.<a href="org/tasktide/core/TaskTideModelType.html" title="enum class in org.tasktide.core">TaskTideModelType</a></dt>
+<dd>
+<div class="block">Checks whether queried string matches
+ the simple class</div>
 </dd>
 <dt><a href="org/tasktide/tasktide/client/TaskTideClientType.html#isClient(java.lang.String)" class="member-name-link">isClient(String)</a> - Method in enum class org.tasktide.tasktide.client.<a href="org/tasktide/tasktide/client/TaskTideClientType.html" title="enum class in org.tasktide.tasktide.client">TaskTideClientType</a></dt>
 <dd>&nbsp;</dd>
@@ -5277,6 +5205,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html#isComplete(java.lang.String)" class="member-name-link">isComplete(String)</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Check if task is still done or cancelled</div>
 </dd>
 <dt><a href="org/tasktide/core/services/AbstractTaskTideService.html#isConfigured()" class="member-name-link">isConfigured()</a> - Method in class org.tasktide.core.services.<a href="org/tasktide/core/services/AbstractTaskTideService.html" title="class in org.tasktide.core.services">AbstractTaskTideService</a></dt>
@@ -5307,10 +5236,12 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html#isDone(java.lang.String)" class="member-name-link">isDone(String)</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Check whether task is completed</div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TaskTracker.html#isDone(java.lang.String)" class="member-name-link">isDone(String)</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TaskTracker.html" title="class in org.tasktide.engine.trackers">TaskTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Check whether task is completed</div>
 </dd>
 <dt><a href="org/tasktide/engine/policies/WorkerExecutionPolicy.html#isEngineMode(java.lang.String)" class="member-name-link">isEngineMode(String)</a> - Method in enum class org.tasktide.engine.policies.<a href="org/tasktide/engine/policies/WorkerExecutionPolicy.html" title="enum class in org.tasktide.engine.policies">WorkerExecutionPolicy</a></dt>
@@ -5335,6 +5266,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TaskTracker.html#isHeld(java.lang.String)" class="member-name-link">isHeld(String)</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TaskTracker.html" title="class in org.tasktide.engine.trackers">TaskTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Check whether is held in a non completed state</div>
 </dd>
 <dt><a href="org/tasktide/core/manager/TaskTideServiceManager.html#isInitialized()" class="member-name-link">isInitialized()</a> - Static method in class org.tasktide.core.manager.<a href="org/tasktide/core/manager/TaskTideServiceManager.html" title="class in org.tasktide.core.manager">TaskTideServiceManager</a></dt>
@@ -5487,10 +5419,12 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html#isPresent(java.lang.String)" class="member-name-link">isPresent(String)</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Check whether task is present</div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TaskTracker.html#isPresent(java.lang.String)" class="member-name-link">isPresent(String)</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TaskTracker.html" title="class in org.tasktide.engine.trackers">TaskTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Check whether task is present</div>
 </dd>
 <dt><a href="org/tasktide/tasktide/containerprovider/CdiProviders.html#isProvider(java.lang.String)" class="member-name-link">isProvider(String)</a> - Method in enum class org.tasktide.tasktide.containerprovider.<a href="org/tasktide/tasktide/containerprovider/CdiProviders.html" title="enum class in org.tasktide.tasktide.containerprovider">CdiProviders</a></dt>
@@ -5515,6 +5449,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TaskTracker.html#isRunning(java.lang.String)" class="member-name-link">isRunning(String)</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TaskTracker.html" title="class in org.tasktide.engine.trackers">TaskTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Check if task is running</div>
 </dd>
 <dt><a href="org/tasktide/api/auth/AuthenticationSchemeType.html#isSchemeType(java.lang.String)" class="member-name-link">isSchemeType(String)</a> - Method in enum class org.tasktide.api.auth.<a href="org/tasktide/api/auth/AuthenticationSchemeType.html" title="enum class in org.tasktide.api.auth">AuthenticationSchemeType</a></dt>
@@ -5537,6 +5472,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutionState.html#isState(java.lang.String)" class="member-name-link">isState(String)</a> - Method in enum class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutionState.html" title="enum class in org.tasktide.engine.trackers">ExecutionState</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Compare to queried state string</div>
 </dd>
 <dt><a href="org/tasktide/core/model/state_summary/ItemState.html#isState(org.tasktide.core.model.state_summary.ItemState)" class="member-name-link">isState(ItemState)</a> - Method in enum class org.tasktide.core.model.state_summary.<a href="org/tasktide/core/model/state_summary/ItemState.html" title="enum class in org.tasktide.core.model.state_summary">ItemState</a></dt>
@@ -5549,6 +5485,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutionState.html#isState(org.tasktide.engine.trackers.ExecutionState)" class="member-name-link">isState(ExecutionState)</a> - Method in enum class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutionState.html" title="enum class in org.tasktide.engine.trackers">ExecutionState</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Compare to queried to state</div>
 </dd>
 <dt><a href="org/tasktide/engine/policies/AbstractAcquisitionPolicy.html#isStringAnnotated()" class="member-name-link">isStringAnnotated()</a> - Method in class org.tasktide.engine.policies.<a href="org/tasktide/engine/policies/AbstractAcquisitionPolicy.html" title="class in org.tasktide.engine.policies">AbstractAcquisitionPolicy</a></dt>
@@ -5648,9 +5585,13 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dt><a href="org/tasktide/core/model/builders/BuilderType.html#ITEM_TASK" class="member-name-link">ITEM_TASK</a> - Enum constant in enum class org.tasktide.core.model.builders.<a href="org/tasktide/core/model/builders/BuilderType.html" title="enum class in org.tasktide.core.model.builders">BuilderType</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/engine/trackers/FutureTrackers.html#ITEM_TASK_TRACKER" class="member-name-link">ITEM_TASK_TRACKER</a> - Static variable in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/FutureTrackers.html" title="class in org.tasktide.engine.trackers">FutureTrackers</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="org/tasktide/engine/trackers/TaskTrackers.html#ITEM_TASK_TRACKER" class="member-name-link">ITEM_TASK_TRACKER</a> - Static variable in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TaskTrackers.html" title="class in org.tasktide.engine.trackers">TaskTrackers</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="org/tasktide/tasktide/client/config/ManagerConfig.html#itemId()" class="member-name-link">itemId()</a> - Method in class org.tasktide.tasktide.client.config.<a href="org/tasktide/tasktide/client/config/ManagerConfig.html" title="class in org.tasktide.tasktide.client.config">ManagerConfig</a></dt>
 <dd>
 <div class="block">Configures ItemId of ManagerTarget for ManagerAction</div>
@@ -5702,7 +5643,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>
 <div class="block">Utilize RocksDB as a <a href="org/tasktide/core/TaskTideRepository.html" title="interface in org.tasktide.core"><code>TaskTideRepository</code></a> through the <a href="org/tasktide/itemstore/ItemStore.html" title="interface in org.tasktide.itemstore"><code>ItemStore</code></a></div>
 </dd>
-<dt><a href="org/tasktide/core/repository/ItemStoreRepository.html#%3Cinit%3E(org.tasktide.itemstore.ItemStore,java.lang.Class,java.lang.String)" class="member-name-link">ItemStoreRepository(ItemStore, Class, String)</a> - Constructor for class org.tasktide.core.repository.<a href="org/tasktide/core/repository/ItemStoreRepository.html" title="class in org.tasktide.core.repository">ItemStoreRepository</a></dt>
+<dt><a href="org/tasktide/core/repository/ItemStoreRepository.html#%3Cinit%3E(org.tasktide.core.TaskTideModelType,org.tasktide.itemstore.ItemStore,java.lang.Class,java.lang.String)" class="member-name-link">ItemStoreRepository(TaskTideModelType, ItemStore, Class, String)</a> - Constructor for class org.tasktide.core.repository.<a href="org/tasktide/core/repository/ItemStoreRepository.html" title="class in org.tasktide.core.repository">ItemStoreRepository</a></dt>
 <dd>
 <div class="block">Construct with <a href="org/tasktide/itemstore/ItemStore.html" title="interface in org.tasktide.itemstore"><code>ItemStore</code></a></div>
 </dd>
@@ -5905,6 +5846,8 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/manager/command/ManagerTarget.html#JOB_ENVIRONMENT" class="member-name-link">JOB_ENVIRONMENT</a> - Enum constant in enum class org.tasktide.core.manager.command.<a href="org/tasktide/core/manager/command/ManagerTarget.html" title="enum class in org.tasktide.core.manager.command">ManagerTarget</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/tasktide/core/TaskTideModelType.html#JOB_ENVIRONMENT" class="member-name-link">JOB_ENVIRONMENT</a> - Enum constant in enum class org.tasktide.core.<a href="org/tasktide/core/TaskTideModelType.html" title="enum class in org.tasktide.core">TaskTideModelType</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/model/job_env/JobEnvironment.html" class="type-name-link" title="class in org.tasktide.core.model.job_env">JobEnvironment</a> - Class in <a href="org/tasktide/core/model/job_env/package-summary.html">org.tasktide.core.model.job_env</a></dt>
 <dd>
 <div class="block">Data class to hold collection of host meta-data running job
@@ -6001,7 +5944,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <div class="block">JPA Entity Manager repository allowing subclasses to be persisted
  to Relational backends (ex Postgres, MySQL etc)</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/JpaRepository.html#%3Cinit%3E(jakarta.persistence.EntityManager,java.lang.Class,java.lang.String)" class="member-name-link">JpaRepository(EntityManager, Class, String)</a> - Constructor for class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JpaRepository.html" title="class in org.tasktide.core.repository">JpaRepository</a></dt>
+<dt><a href="org/tasktide/core/repository/JpaRepository.html#%3Cinit%3E(org.tasktide.core.TaskTideModelType,jakarta.persistence.EntityManager,java.lang.Class,java.lang.String)" class="member-name-link">JpaRepository(TaskTideModelType, EntityManager, Class, String)</a> - Constructor for class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JpaRepository.html" title="class in org.tasktide.core.repository">JpaRepository</a></dt>
 <dd>
 <div class="block">Construct with target model class, and collection</div>
 </dd>
@@ -6034,8 +5977,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>
 <div class="block">Constructs <a href="org/tasktide/core/model/workitem/WorkItem.html" title="class in org.tasktide.core.model.workitem"><code>WorkItem</code></a> <a href="org/tasktide/core/TaskTideRepository.html" title="interface in org.tasktide.core"><code>TaskTideRepository</code></a></div>
 </dd>
-<dt><a href="org/tasktide/core/repository/RepositoryType.html#JSON" class="member-name-link">JSON</a> - Enum constant in enum class org.tasktide.core.repository.<a href="org/tasktide/core/repository/RepositoryType.html" title="enum class in org.tasktide.core.repository">RepositoryType</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/tasktide/mutex/actor/InterProcessMutexActor.html#JSON" class="member-name-link">JSON</a> - Variable in class org.tasktide.mutex.actor.<a href="org/tasktide/mutex/actor/InterProcessMutexActor.html" title="class in org.tasktide.mutex.actor">InterProcessMutexActor</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/manager/JsonbManagerTaskWorkItemAdapter.html" class="type-name-link" title="class in org.tasktide.core.manager">JsonbManagerTaskWorkItemAdapter</a> - Class in <a href="org/tasktide/core/manager/package-summary.html">org.tasktide.core.manager</a></dt>
@@ -6044,64 +5985,12 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/core/manager/JsonbManagerTaskWorkItemAdapter.html#%3Cinit%3E()" class="member-name-link">JsonbManagerTaskWorkItemAdapter()</a> - Constructor for class org.tasktide.core.manager.<a href="org/tasktide/core/manager/JsonbManagerTaskWorkItemAdapter.html" title="class in org.tasktide.core.manager">JsonbManagerTaskWorkItemAdapter</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/JsonJobEnvironmentRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.json_repo">JsonJobEnvironmentRepository</a> - Class in <a href="org/tasktide/core/repository/json_repo/package-summary.html">org.tasktide.core.repository.json_repo</a></dt>
-<dd>
-<div class="block">JSON orientated repository for <a href="org/tasktide/core/model/job_env/JobEnvironment.html" title="class in org.tasktide.core.model.job_env"><code>JobEnvironment</code></a></div>
-</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/JsonJobEnvironmentRepository.html#%3Cinit%3E(java.util.List,java.lang.String)" class="member-name-link">JsonJobEnvironmentRepository(List, String)</a> - Constructor for class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/JsonJobEnvironmentRepository.html" title="class in org.tasktide.core.repository.json_repo">JsonJobEnvironmentRepository</a></dt>
-<dd>
-<div class="block">Constructs <a href="org/tasktide/core/model/job_env/JobEnvironment.html" title="class in org.tasktide.core.model.job_env"><code>JobEnvironment</code></a> repository for the same</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/JsonMetricProfileRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.json_repo">JsonMetricProfileRepository</a> - Class in <a href="org/tasktide/core/repository/json_repo/package-summary.html">org.tasktide.core.repository.json_repo</a></dt>
-<dd>
-<div class="block">JSON orientated repository for <a href="org/tasktide/core/model/job_env/metrics/MetricProfile.html" title="class in org.tasktide.core.model.job_env.metrics"><code>MetricProfile</code></a></div>
-</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/JsonMetricProfileRepository.html#%3Cinit%3E(java.util.List,java.lang.String)" class="member-name-link">JsonMetricProfileRepository(List, String)</a> - Constructor for class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/JsonMetricProfileRepository.html" title="class in org.tasktide.core.repository.json_repo">JsonMetricProfileRepository</a></dt>
-<dd>
-<div class="block">Constructs <a href="org/tasktide/core/model/job_env/JobEnvironment.html" title="class in org.tasktide.core.model.job_env"><code>JobEnvironment</code></a> repository for the same</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html" class="type-name-link" title="class in org.tasktide.core.repository">JsonRepository&lt;T&gt;</a> - Class in <a href="org/tasktide/core/repository/package-summary.html">org.tasktide.core.repository</a></dt>
-<dd>
-<div class="block">Class to support file backend in compressed json format.</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#%3Cinit%3E(java.util.List,java.lang.Class,java.lang.String)" class="member-name-link">JsonRepository(List, Class, String)</a> - Constructor for class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Construct JSON Repository for list of model classes</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/JsonRepoType.html" class="type-name-link" title="enum class in org.tasktide.core.repository.json_repo">JsonRepoType</a> - Enum Class in <a href="org/tasktide/core/repository/json_repo/package-summary.html">org.tasktide.core.repository.json_repo</a></dt>
-<dd>
-<div class="block">Enum to simplify importing file repository</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/JsonStepRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.json_repo">JsonStepRepository</a> - Class in <a href="org/tasktide/core/repository/json_repo/package-summary.html">org.tasktide.core.repository.json_repo</a></dt>
-<dd>
-<div class="block">JSON File I/O repository for Step</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/JsonStepRepository.html#%3Cinit%3E(java.util.List,java.lang.String)" class="member-name-link">JsonStepRepository(List, String)</a> - Constructor for class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/JsonStepRepository.html" title="class in org.tasktide.core.repository.json_repo">JsonStepRepository</a></dt>
-<dd>
-<div class="block">Construct StepRepository with injectable template and configurable collection name</div>
-</dd>
 <dt><a href="org/tasktide/core/supporting/JsonUtils.html" class="type-name-link" title="class in org.tasktide.core.supporting">JsonUtils</a> - Class in <a href="org/tasktide/core/supporting/package-summary.html">org.tasktide.core.supporting</a></dt>
 <dd>
 <div class="block">Single class for JSON Serde with(out) indentation</div>
 </dd>
 <dt><a href="org/tasktide/core/supporting/JsonUtils.html#%3Cinit%3E()" class="member-name-link">JsonUtils()</a> - Constructor for class org.tasktide.core.supporting.<a href="org/tasktide/core/supporting/JsonUtils.html" title="class in org.tasktide.core.supporting">JsonUtils</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/JsonWorkflowRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.json_repo">JsonWorkflowRepository</a> - Class in <a href="org/tasktide/core/repository/json_repo/package-summary.html">org.tasktide.core.repository.json_repo</a></dt>
-<dd>
-<div class="block">JSON File I/O repository for Workflow</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/JsonWorkflowRepository.html#%3Cinit%3E(java.util.List,java.lang.String)" class="member-name-link">JsonWorkflowRepository(List, String)</a> - Constructor for class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/JsonWorkflowRepository.html" title="class in org.tasktide.core.repository.json_repo">JsonWorkflowRepository</a></dt>
-<dd>
-<div class="block">Construct WorkItemRepository with injectable template and configurable collection name</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/JsonWorkItemRepository.html" class="type-name-link" title="class in org.tasktide.core.repository.json_repo">JsonWorkItemRepository</a> - Class in <a href="org/tasktide/core/repository/json_repo/package-summary.html">org.tasktide.core.repository.json_repo</a></dt>
-<dd>
-<div class="block">JSON File I/O repository for WorkItems</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/JsonWorkItemRepository.html#%3Cinit%3E(java.util.List,java.lang.String)" class="member-name-link">JsonWorkItemRepository(List, String)</a> - Constructor for class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/JsonWorkItemRepository.html" title="class in org.tasktide.core.repository.json_repo">JsonWorkItemRepository</a></dt>
-<dd>
-<div class="block">Construct WorkItemRepository with injectable template and configurable collection name</div>
-</dd>
 <dt><a href="org/tasktide/api/auth/JwtSecurityContext.html" class="type-name-link" title="class in org.tasktide.api.auth">JwtSecurityContext</a> - Class in <a href="org/tasktide/api/auth/package-summary.html">org.tasktide.api.auth</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/api/auth/JwtSecurityContext.html#%3Cinit%3E(org.tasktide.api.auth.AuthPrincipal,boolean,java.util.Set)" class="member-name-link">JwtSecurityContext(AuthPrincipal, boolean, Set)</a> - Constructor for class org.tasktide.api.auth.<a href="org/tasktide/api/auth/JwtSecurityContext.html" title="class in org.tasktide.api.auth">JwtSecurityContext</a></dt>
@@ -6136,10 +6025,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>
 <div class="block">Fetch names of current nodes children</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#listToJson(java.util.List)" class="member-name-link">listToJson(List)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Return input data as JSON array string</div>
-</dd>
 <dt><a href="org/tasktide/core/repository/AbstractRepository.html#load()" class="member-name-link">load()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/AbstractRepository.html" title="class in org.tasktide.core.repository">AbstractRepository</a></dt>
 <dd>
 <div class="block">Could paginate here</div>
@@ -6151,10 +6036,6 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dt><a href="org/tasktide/core/repository/JpaRepository.html#load()" class="member-name-link">load()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JpaRepository.html" title="class in org.tasktide.core.repository">JpaRepository</a></dt>
 <dd>
 <div class="block">Fetch all records</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#load()" class="member-name-link">load()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Save to file</div>
 </dd>
 <dt><a href="org/tasktide/core/TaskTideRepository.html#load()" class="member-name-link">load()</a> - Method in interface org.tasktide.core.<a href="org/tasktide/core/TaskTideRepository.html" title="interface in org.tasktide.core">TaskTideRepository</a></dt>
 <dd>
@@ -6171,24 +6052,10 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dt><a href="org/tasktide/core/model/state_summary/ItemState.html#LOCKED" class="member-name-link">LOCKED</a> - Enum constant in enum class org.tasktide.core.model.state_summary.<a href="org/tasktide/core/model/state_summary/ItemState.html" title="enum class in org.tasktide.core.model.state_summary">ItemState</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutionState.html#LOCKED" class="member-name-link">LOCKED</a> - Enum constant in enum class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutionState.html" title="enum class in org.tasktide.engine.trackers">ExecutionState</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="org/tasktide/mutex/model/MutexState.html#LOCKED" class="member-name-link">LOCKED</a> - Enum constant in enum class org.tasktide.mutex.model.<a href="org/tasktide/mutex/model/MutexState.html" title="enum class in org.tasktide.mutex.model">MutexState</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/tasktide/mutex/actor/FileChannelActor.html#lockedByActiveHost()" class="member-name-link">lockedByActiveHost()</a> - Method in class org.tasktide.mutex.actor.<a href="org/tasktide/mutex/actor/FileChannelActor.html" title="class in org.tasktide.mutex.actor">FileChannelActor</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/tasktide/mutex/actor/MutexActor.html#lockedByActiveHost()" class="member-name-link">lockedByActiveHost()</a> - Method in interface org.tasktide.mutex.actor.<a href="org/tasktide/mutex/actor/MutexActor.html" title="interface in org.tasktide.mutex.actor">MutexActor</a></dt>
-<dd>
-<div class="block">Checks whether this host has locked</div>
-</dd>
-<dt><a href="org/tasktide/mutex/actor/NfsMutexActor.html#lockedByActiveHost()" class="member-name-link">lockedByActiveHost()</a> - Method in class org.tasktide.mutex.actor.<a href="org/tasktide/mutex/actor/NfsMutexActor.html" title="class in org.tasktide.mutex.actor">NfsMutexActor</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/tasktide/mutex/actor/FileChannelActor.html#lockedByActiveProcess()" class="member-name-link">lockedByActiveProcess()</a> - Method in class org.tasktide.mutex.actor.<a href="org/tasktide/mutex/actor/FileChannelActor.html" title="class in org.tasktide.mutex.actor">FileChannelActor</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/tasktide/mutex/actor/MutexActor.html#lockedByActiveProcess()" class="member-name-link">lockedByActiveProcess()</a> - Method in interface org.tasktide.mutex.actor.<a href="org/tasktide/mutex/actor/MutexActor.html" title="interface in org.tasktide.mutex.actor">MutexActor</a></dt>
-<dd>
-<div class="block">Checks whether locked by active process</div>
-</dd>
-<dt><a href="org/tasktide/mutex/actor/NfsMutexActor.html#lockedByActiveProcess()" class="member-name-link">lockedByActiveProcess()</a> - Method in class org.tasktide.mutex.actor.<a href="org/tasktide/mutex/actor/NfsMutexActor.html" title="class in org.tasktide.mutex.actor">NfsMutexActor</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/services/WorkItemService.html#lockItem(org.tasktide.core.model.workitem.WorkItem)" class="member-name-link">lockItem(WorkItem)</a> - Method in class org.tasktide.core.services.<a href="org/tasktide/core/services/WorkItemService.html" title="class in org.tasktide.core.services">WorkItemService</a></dt>
 <dd>
@@ -6433,10 +6300,12 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TaskTracker.html#markTask(java.lang.String,org.tasktide.engine.trackers.ExecutionState)" class="member-name-link">markTask(String, ExecutionState)</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TaskTracker.html" title="class in org.tasktide.engine.trackers">TaskTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Mark task with <a href="org/tasktide/engine/trackers/ExecutionState.html" title="enum class in org.tasktide.engine.trackers"><code>ExecutionState</code></a></div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html#markTask(java.lang.String,org.tasktide.engine.trackers.ExecutorServiceItem)" class="member-name-link">markTask(String, ExecutorServiceItem)</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Mark task with <a href="org/tasktide/engine/trackers/ExecutorServiceItem.html" title="class in org.tasktide.engine.trackers"><code>ExecutorServiceItem</code></a></div>
 </dd>
 <dt><a href="org/tasktide/itemstore/RocksDbStore.html#master" class="member-name-link">master</a> - Variable in class org.tasktide.itemstore.<a href="org/tasktide/itemstore/RocksDbStore.html" title="class in org.tasktide.itemstore">RocksDbStore</a></dt>
@@ -6459,7 +6328,11 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 </dd>
 <dt><a href="org/tasktide/core/manager/command/ManagerTarget.html#METRIC_DATA" class="member-name-link">METRIC_DATA</a> - Enum constant in enum class org.tasktide.core.manager.command.<a href="org/tasktide/core/manager/command/ManagerTarget.html" title="enum class in org.tasktide.core.manager.command">ManagerTarget</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/tasktide/core/TaskTideModelType.html#METRIC_DATA" class="member-name-link">METRIC_DATA</a> - Enum constant in enum class org.tasktide.core.<a href="org/tasktide/core/TaskTideModelType.html" title="enum class in org.tasktide.core">TaskTideModelType</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/manager/command/ManagerTarget.html#METRIC_PROFILE" class="member-name-link">METRIC_PROFILE</a> - Enum constant in enum class org.tasktide.core.manager.command.<a href="org/tasktide/core/manager/command/ManagerTarget.html" title="enum class in org.tasktide.core.manager.command">ManagerTarget</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/tasktide/core/TaskTideModelType.html#METRIC_PROFILE" class="member-name-link">METRIC_PROFILE</a> - Enum constant in enum class org.tasktide.core.<a href="org/tasktide/core/TaskTideModelType.html" title="enum class in org.tasktide.core">TaskTideModelType</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/model/job_env/metrics/MetricData.html" class="type-name-link" title="class in org.tasktide.core.model.job_env.metrics">MetricData</a> - Class in <a href="org/tasktide/core/model/job_env/metrics/package-summary.html">org.tasktide.core.model.job_env.metrics</a></dt>
 <dd>
@@ -6562,7 +6435,7 @@ targeted <a href="org/tasktide/core/TaskTideRepository.html" title="interface in
 <dd>
 <div class="block">Construct provider with builders</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#modelCollection" class="member-name-link">modelCollection</a> - Variable in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
+<dt><a href="org/tasktide/core/repository/AbstractRepository.html#modelType" class="member-name-link">modelType</a> - Variable in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/AbstractRepository.html" title="class in org.tasktide.core.repository">AbstractRepository</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/manager/TaskTideServiceManager.html#modify(org.tasktide.core.TaskTideService,org.tasktide.core.TaskTideService,org.tasktide.core.TaskTideService,org.tasktide.core.TaskTideService,org.tasktide.core.TaskTideService,org.tasktide.core.TaskTideService)" class="member-name-link">modify(TaskTideService, TaskTideService, TaskTideService, TaskTideService, TaskTideService, TaskTideService)</a> - Static method in class org.tasktide.core.manager.<a href="org/tasktide/core/manager/TaskTideServiceManager.html" title="class in org.tasktide.core.manager">TaskTideServiceManager</a></dt>
 <dd>&nbsp;</dd>
@@ -6953,8 +6826,6 @@ Currently the algorithm only runs as a waiter/holds the executing thread.</div>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/repository/jpa_repo/package-summary.html">org.tasktide.core.repository.jpa_repo</a> - package org.tasktide.core.repository.jpa_repo</dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/package-summary.html">org.tasktide.core.repository.json_repo</a> - package org.tasktide.core.repository.json_repo</dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/repository/template_repo/package-summary.html">org.tasktide.core.repository.template_repo</a> - package org.tasktide.core.repository.template_repo</dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/services/package-summary.html">org.tasktide.core.services</a> - package org.tasktide.core.services</dt>
@@ -7161,7 +7032,9 @@ Currently the algorithm only runs as a waiter/holds the executing thread.</div>
 <dt><a href="org/tasktide/mutex/strategy/PositionCheckValues.html" class="type-name-link" title="enum class in org.tasktide.mutex.strategy">PositionCheckValues</a> - Enum Class in <a href="org/tasktide/mutex/strategy/package-summary.html">org.tasktide.mutex.strategy</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutionState.html#PREPARE" class="member-name-link">PREPARE</a> - Enum constant in enum class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutionState.html" title="enum class in org.tasktide.engine.trackers">ExecutionState</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="org/tasktide/mutex/actor/InterProcessMutexActor.html#PRETTY_JSON" class="member-name-link">PRETTY_JSON</a> - Variable in class org.tasktide.mutex.actor.<a href="org/tasktide/mutex/actor/InterProcessMutexActor.html" title="class in org.tasktide.mutex.actor">InterProcessMutexActor</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/tasktide/client/TaskTideClientUtility.html#printSplash()" class="member-name-link">printSplash()</a> - Static method in class org.tasktide.tasktide.client.<a href="org/tasktide/tasktide/client/TaskTideClientUtility.html" title="class in org.tasktide.tasktide.client">TaskTideClientUtility</a></dt>
@@ -7329,7 +7202,9 @@ Currently the algorithm only runs as a waiter/holds the executing thread.</div>
 <div class="block">Returns whether file path is empty</div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutionState.html#QUEUED" class="member-name-link">QUEUED</a> - Enum constant in enum class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutionState.html" title="enum class in org.tasktide.engine.trackers">ExecutionState</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="org/tasktide/mutex/strategy/MutexStrategy.html#queueSize()" class="member-name-link">queueSize()</a> - Method in class org.tasktide.mutex.strategy.<a href="org/tasktide/mutex/strategy/MutexStrategy.html" title="class in org.tasktide.mutex.strategy">MutexStrategy</a></dt>
 <dd>
 <div class="block">Return queue size</div>
@@ -7337,10 +7212,6 @@ Currently the algorithm only runs as a waiter/holds the executing thread.</div>
 </dl>
 <h2 class="title" id="I:R">R</h2>
 <dl class="index">
-<dt><a href="org/tasktide/core/repository/json_repo/Compression.html#readByteArrFromFile(java.lang.String)" class="member-name-link">readByteArrFromFile(String)</a> - Method in class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/Compression.html" title="class in org.tasktide.core.repository.json_repo">Compression</a></dt>
-<dd>
-<div class="block">Read byte array from file</div>
-</dd>
 <dt><a href="org/tasktide/api/resources/services/rest/JobEnvironmentRestResource.html#readJobEnvironment(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,jakarta.ws.rs.core.HttpHeaders,jakarta.ws.rs.core.UriInfo,jakarta.ws.rs.core.SecurityContext)" class="member-name-link">readJobEnvironment(String, String, String, String, String, HttpHeaders, UriInfo, SecurityContext)</a> - Method in class org.tasktide.api.resources.services.rest.<a href="org/tasktide/api/resources/services/rest/JobEnvironmentRestResource.html" title="class in org.tasktide.api.resources.services.rest">JobEnvironmentRestResource</a></dt>
 <dd>
 <div class="block">Endpoint for fetching <a href="org/tasktide/core/model/job_env/JobEnvironment.html" title="class in org.tasktide.core.model.job_env"><code>JobEnvironment</code></a> by Id,
@@ -7508,10 +7379,6 @@ Currently the algorithm only runs as a waiter/holds the executing thread.</div>
 </dd>
 <dt><a href="org/tasktide/core/repository/AbstractRepository.html#repoType" class="member-name-link">repoType</a> - Variable in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/AbstractRepository.html" title="class in org.tasktide.core.repository">AbstractRepository</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/tasktide/core/repository/ItemStoreRepository.html#repoType" class="member-name-link">repoType</a> - Variable in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/ItemStoreRepository.html" title="class in org.tasktide.core.repository">ItemStoreRepository</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#repoType" class="member-name-link">repoType</a> - Variable in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/tasktide/api/utils/WebApiUtils.html#requireRole(jakarta.ws.rs.core.SecurityContext,java.lang.String)" class="member-name-link">requireRole(SecurityContext, String)</a> - Static method in class org.tasktide.api.utils.<a href="org/tasktide/api/utils/WebApiUtils.html" title="class in org.tasktide.api.utils">WebApiUtils</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/api/utils/WebApiUtils.html#requireUser(jakarta.ws.rs.core.SecurityContext)" class="member-name-link">requireUser(SecurityContext)</a> - Static method in class org.tasktide.api.utils.<a href="org/tasktide/api/utils/WebApiUtils.html" title="class in org.tasktide.api.utils">WebApiUtils</a></dt>
@@ -7629,10 +7496,6 @@ Currently the algorithm only runs as a waiter/holds the executing thread.</div>
 </dd>
 <dt><a href="org/tasktide/core/repository/AbstractRepository.html#resultSetSize" class="member-name-link">resultSetSize</a> - Variable in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/AbstractRepository.html" title="class in org.tasktide.core.repository">AbstractRepository</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/tasktide/core/repository/ItemStoreRepository.html#resultSetSize" class="member-name-link">resultSetSize</a> - Variable in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/ItemStoreRepository.html" title="class in org.tasktide.core.repository">ItemStoreRepository</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#resultSetSize" class="member-name-link">resultSetSize</a> - Variable in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/services/AbstractTaskTideService.html#resultSetSize" class="member-name-link">resultSetSize</a> - Variable in class org.tasktide.core.services.<a href="org/tasktide/core/services/AbstractTaskTideService.html" title="class in org.tasktide.core.services">AbstractTaskTideService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/tasktide/client/config/GlobalConfig.html#resultSetSize()" class="member-name-link">resultSetSize()</a> - Method in class org.tasktide.tasktide.client.config.<a href="org/tasktide/tasktide/client/config/GlobalConfig.html" title="class in org.tasktide.tasktide.client.config">GlobalConfig</a></dt>
@@ -7709,7 +7572,9 @@ Currently the algorithm only runs as a waiter/holds the executing thread.</div>
 <dt><a href="org/tasktide/core/model/job_env/JobState.html#RUNNING" class="member-name-link">RUNNING</a> - Enum constant in enum class org.tasktide.core.model.job_env.<a href="org/tasktide/core/model/job_env/JobState.html" title="enum class in org.tasktide.core.model.job_env">JobState</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutionState.html#RUNNING" class="member-name-link">RUNNING</a> - Enum constant in enum class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutionState.html" title="enum class in org.tasktide.engine.trackers">ExecutionState</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="org/tasktide/engine/executor/TaskTideExecutor.html#runTasks(java.util.List)" class="member-name-link">runTasks(List)</a> - Method in class org.tasktide.engine.executor.<a href="org/tasktide/engine/executor/TaskTideExecutor.html" title="class in org.tasktide.engine.executor">TaskTideExecutor</a></dt>
 <dd>
 <div class="block">Thread safe execution of tasks in a workload</div>
@@ -7724,10 +7589,6 @@ Currently the algorithm only runs as a waiter/holds the executing thread.</div>
 <dt><a href="org/tasktide/core/repository/JpaRepository.html#save()" class="member-name-link">save()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JpaRepository.html" title="class in org.tasktide.core.repository">JpaRepository</a></dt>
 <dd>
 <div class="block">Persist all records</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#save()" class="member-name-link">save()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Save data to file</div>
 </dd>
 <dt><a href="org/tasktide/core/repository/TemplateRepository.html#save()" class="member-name-link">save()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/TemplateRepository.html" title="class in org.tasktide.core.repository">TemplateRepository</a></dt>
 <dd>
@@ -8090,6 +7951,10 @@ Currently the algorithm only runs as a waiter/holds the executing thread.</div>
 <dd>
 <div class="block">Sets a new <a href="org/tasktide/core/model/job_env/JobState.html" title="enum class in org.tasktide.core.model.job_env"><code>JobState</code></a></div>
 </dd>
+<dt><a href="org/tasktide/core/model/job_env/JobEnvironment.html#setJobType(org.tasktide.core.model.job_env.JobType)" class="member-name-link">setJobType(JobType)</a> - Method in class org.tasktide.core.model.job_env.<a href="org/tasktide/core/model/job_env/JobEnvironment.html" title="class in org.tasktide.core.model.job_env">JobEnvironment</a></dt>
+<dd>
+<div class="block">Set <a href="org/tasktide/core/model/job_env/JobType.html" title="enum class in org.tasktide.core.model.job_env"><code>JobType</code></a></div>
+</dd>
 <dt><a href="org/tasktide/core/model/job_env/metrics/MetricData.html#setLabel(java.lang.String)" class="member-name-link">setLabel(String)</a> - Method in class org.tasktide.core.model.job_env.metrics.<a href="org/tasktide/core/model/job_env/metrics/MetricData.html" title="class in org.tasktide.core.model.job_env.metrics">MetricData</a></dt>
 <dd>
 <div class="block">Set label</div>
@@ -8129,6 +7994,10 @@ Currently the algorithm only runs as a waiter/holds the executing thread.</div>
 <dt><a href="org/tasktide/core/model/job_env/metrics/MetricData.html#setMetricType(org.tasktide.core.model.job_env.metrics.MetricType)" class="member-name-link">setMetricType(MetricType)</a> - Method in class org.tasktide.core.model.job_env.metrics.<a href="org/tasktide/core/model/job_env/metrics/MetricData.html" title="class in org.tasktide.core.model.job_env.metrics">MetricData</a></dt>
 <dd>
 <div class="block">Sets metric type</div>
+</dd>
+<dt><a href="org/tasktide/core/model/job_env/metrics/MetricProfile.html#setMetricType(org.tasktide.core.model.job_env.metrics.MetricType)" class="member-name-link">setMetricType(MetricType)</a> - Method in class org.tasktide.core.model.job_env.metrics.<a href="org/tasktide/core/model/job_env/metrics/MetricProfile.html" title="class in org.tasktide.core.model.job_env.metrics">MetricProfile</a></dt>
+<dd>
+<div class="block">Sets <a href="org/tasktide/core/model/job_env/metrics/MetricType.html" title="enum class in org.tasktide.core.model.job_env.metrics"><code>MetricType</code></a></div>
 </dd>
 <dt><a href="org/tasktide/core/manager/command/CommandSpec.html#setOptions(java.util.Optional)" class="member-name-link">setOptions(Optional)</a> - Method in class org.tasktide.core.manager.command.<a href="org/tasktide/core/manager/command/CommandSpec.html" title="class in org.tasktide.core.manager.command">CommandSpec</a></dt>
 <dd>
@@ -8183,10 +8052,6 @@ Currently the algorithm only runs as a waiter/holds the executing thread.</div>
 <div class="block">Set results set size</div>
 </dd>
 <dt><a href="org/tasktide/core/repository/ItemStoreRepository.html#setResultSetSize(int)" class="member-name-link">setResultSetSize(int)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/ItemStoreRepository.html" title="class in org.tasktide.core.repository">ItemStoreRepository</a></dt>
-<dd>
-<div class="block">Set results set size</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#setResultSetSize(int)" class="member-name-link">setResultSetSize(int)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
 <dd>
 <div class="block">Set results set size</div>
 </dd>
@@ -8371,14 +8236,6 @@ Currently the algorithm only runs as a waiter/holds the executing thread.</div>
 </dd>
 <dt><a href="org/tasktide/engine/policies/resources/AcquisitionPolicyJsonResource.html#setType(java.lang.String)" class="member-name-link">setType(String)</a> - Method in class org.tasktide.engine.policies.resources.<a href="org/tasktide/engine/policies/resources/AcquisitionPolicyJsonResource.html" title="class in org.tasktide.engine.policies.resources">AcquisitionPolicyJsonResource</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/tasktide/core/model/job_env/JobEnvironment.html#setType(org.tasktide.core.model.job_env.JobType)" class="member-name-link">setType(JobType)</a> - Method in class org.tasktide.core.model.job_env.<a href="org/tasktide/core/model/job_env/JobEnvironment.html" title="class in org.tasktide.core.model.job_env">JobEnvironment</a></dt>
-<dd>
-<div class="block">Set <a href="org/tasktide/core/model/job_env/JobType.html" title="enum class in org.tasktide.core.model.job_env"><code>JobType</code></a></div>
-</dd>
-<dt><a href="org/tasktide/core/model/job_env/metrics/MetricProfile.html#setType(org.tasktide.core.model.job_env.metrics.MetricType)" class="member-name-link">setType(MetricType)</a> - Method in class org.tasktide.core.model.job_env.metrics.<a href="org/tasktide/core/model/job_env/metrics/MetricProfile.html" title="class in org.tasktide.core.model.job_env.metrics">MetricProfile</a></dt>
-<dd>
-<div class="block">Sets <a href="org/tasktide/core/model/job_env/metrics/MetricType.html" title="enum class in org.tasktide.core.model.job_env.metrics"><code>MetricType</code></a></div>
-</dd>
 <dt><a href="org/tasktide/core/model/job_env/metrics/MetricData.html#setUnits(java.lang.String)" class="member-name-link">setUnits(String)</a> - Method in class org.tasktide.core.model.job_env.metrics.<a href="org/tasktide/core/model/job_env/metrics/MetricData.html" title="class in org.tasktide.core.model.job_env.metrics">MetricData</a></dt>
 <dd>
 <div class="block">Set unit of data point</div>
@@ -8475,7 +8332,9 @@ Currently the algorithm only runs as a waiter/holds the executing thread.</div>
 <div class="block">Return size of tree</div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutionState.html#SKIPPED" class="member-name-link">SKIPPED</a> - Enum constant in enum class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutionState.html" title="enum class in org.tasktide.engine.trackers">ExecutionState</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="org/tasktide/core/model/job_env/JobType.html#SLURM" class="member-name-link">SLURM</a> - Enum constant in enum class org.tasktide.core.model.job_env.<a href="org/tasktide/core/model/job_env/JobType.html" title="enum class in org.tasktide.core.model.job_env">JobType</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/manager/generator/HostList.html#SPOTIFY" class="member-name-link">SPOTIFY</a> - Enum constant in enum class org.tasktide.core.manager.generator.<a href="org/tasktide/core/manager/generator/HostList.html" title="enum class in org.tasktide.core.manager.generator">HostList</a></dt>
@@ -8575,8 +8434,6 @@ Resolves yasson-3.0.&gt;=4 bump where generic key does not seem supported
 <dt><a href="org/tasktide/core/manager/command/ManagerTarget.html#STEP" class="member-name-link">STEP</a> - Enum constant in enum class org.tasktide.core.manager.command.<a href="org/tasktide/core/manager/command/ManagerTarget.html" title="enum class in org.tasktide.core.manager.command">ManagerTarget</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/model/builders/BuilderType.html#STEP" class="member-name-link">STEP</a> - Enum constant in enum class org.tasktide.core.model.builders.<a href="org/tasktide/core/model/builders/BuilderType.html" title="enum class in org.tasktide.core.model.builders">BuilderType</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/JsonRepoType.html#STEP" class="member-name-link">STEP</a> - Enum constant in enum class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/JsonRepoType.html" title="enum class in org.tasktide.core.repository.json_repo">JsonRepoType</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/TaskTideModelType.html#STEP" class="member-name-link">STEP</a> - Enum constant in enum class org.tasktide.core.<a href="org/tasktide/core/TaskTideModelType.html" title="enum class in org.tasktide.core">TaskTideModelType</a></dt>
 <dd>&nbsp;</dd>
@@ -8739,10 +8596,12 @@ Resolves yasson-3.0.&gt;=4 bump where generic key does not seem supported
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html#taskCount()" class="member-name-link">taskCount()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Fetch count of tasks being tracked</div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TaskTracker.html#taskCount()" class="member-name-link">taskCount()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TaskTracker.html" title="class in org.tasktide.engine.trackers">TaskTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Fetch count of tasks being tracked</div>
 </dd>
 <dt><a href="org/tasktide/core/manager/generator/TaskGenerator.html" class="type-name-link" title="class in org.tasktide.core.manager.generator">TaskGenerator</a> - Class in <a href="org/tasktide/core/manager/generator/package-summary.html">org.tasktide.core.manager.generator</a></dt>
@@ -9023,12 +8882,11 @@ Resolves yasson-3.0.&gt;=4 bump where generic key does not seem supported
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TaskTracker.html" class="type-name-link" title="class in org.tasktide.engine.trackers">TaskTracker&lt;T&gt;</a> - Class in <a href="org/tasktide/engine/trackers/package-summary.html">org.tasktide.engine.trackers</a></dt>
 <dd>
-<div class="block">Generic class to hold logic for tracking execution states of <a href="org/tasktide/core/TaskTideModel.html" title="interface in org.tasktide.core"><code>TaskTideModel</code></a>
- elements (ie <a href="org/tasktide/core/model/task/ItemTask.html" title="class in org.tasktide.core.model.task"><code>ItemTask</code></a>, <a href="org/tasktide/core/model/workitem/WorkItem.html" title="class in org.tasktide.core.model.workitem"><code>WorkItem</code></a>).</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TaskTrackers.html" class="type-name-link" title="class in org.tasktide.engine.trackers">TaskTrackers</a> - Class in <a href="org/tasktide/engine/trackers/package-summary.html">org.tasktide.engine.trackers</a></dt>
 <dd>
-<div class="block">Holder class for generic <a href="org/tasktide/engine/trackers/TaskTracker.html" title="class in org.tasktide.engine.trackers"><code>TaskTracker</code></a> for <a href="org/tasktide/core/model/task/ItemTask.html" title="class in org.tasktide.core.model.task"><code>ItemTask</code></a>, and <a href="org/tasktide/core/model/workitem/WorkItem.html" title="class in org.tasktide.core.model.workitem"><code>WorkItem</code></a></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 </dd>
 <dt><a href="org/tasktide/core/repository/TemplateRepository.html#template" class="member-name-link">template</a> - Variable in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/TemplateRepository.html" title="class in org.tasktide.core.repository">TemplateRepository</a></dt>
 <dd>&nbsp;</dd>
@@ -9060,7 +8918,7 @@ Resolves yasson-3.0.&gt;=4 bump where generic key does not seem supported
 <dd>
 <div class="block">Template Model Repository adding utility and collection info</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/TemplateRepository.html#%3Cinit%3E(jakarta.nosql.Template,java.lang.Class,java.lang.String)" class="member-name-link">TemplateRepository(Template, Class, String)</a> - Constructor for class org.tasktide.core.repository.<a href="org/tasktide/core/repository/TemplateRepository.html" title="class in org.tasktide.core.repository">TemplateRepository</a></dt>
+<dt><a href="org/tasktide/core/repository/TemplateRepository.html#%3Cinit%3E(org.tasktide.core.TaskTideModelType,jakarta.nosql.Template,java.lang.Class,java.lang.String)" class="member-name-link">TemplateRepository(TaskTideModelType, Template, Class, String)</a> - Constructor for class org.tasktide.core.repository.<a href="org/tasktide/core/repository/TemplateRepository.html" title="class in org.tasktide.core.repository">TemplateRepository</a></dt>
 <dd>
 <div class="block">Construct with target model class, and collection name</div>
 </dd>
@@ -9441,10 +9299,6 @@ Resolves yasson-3.0.&gt;=4 bump where generic key does not seem supported
 <dd>
 <div class="block">Represent as string</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#toString()" class="member-name-link">toString()</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Represent as string</div>
-</dd>
 <dt><a href="org/tasktide/core/repository/RepositoryType.html#toString()" class="member-name-link">toString()</a> - Method in enum class org.tasktide.core.repository.<a href="org/tasktide/core/repository/RepositoryType.html" title="enum class in org.tasktide.core.repository">RepositoryType</a></dt>
 <dd>
 <div class="block">Represent value as a string</div>
@@ -9475,18 +9329,22 @@ Resolves yasson-3.0.&gt;=4 bump where generic key does not seem supported
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutionState.html#toString()" class="member-name-link">toString()</a> - Method in enum class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutionState.html" title="enum class in org.tasktide.engine.trackers">ExecutionState</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Represent value as a string</div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html#toString()" class="member-name-link">toString()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Represent collection as String</div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TaskTracker.html#toString()" class="member-name-link">toString()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TaskTracker.html" title="class in org.tasktide.engine.trackers">TaskTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">String representation of tracked tasks and their states.</div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TrackerWaiter.html#toString()" class="member-name-link">toString()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TrackerWaiter.html" title="class in org.tasktide.engine.trackers">TrackerWaiter</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Represent waiter as string</div>
 </dd>
 <dt><a href="org/tasktide/engine/workerunit/container/WorkerUnitModelType.html#toString()" class="member-name-link">toString()</a> - Method in enum class org.tasktide.engine.workerunit.container.<a href="org/tasktide/engine/workerunit/container/WorkerUnitModelType.html" title="enum class in org.tasktide.engine.workerunit.container">WorkerUnitModelType</a></dt>
@@ -9527,9 +9385,7 @@ Resolves yasson-3.0.&gt;=4 bump where generic key does not seem supported
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/engine/trackers/TrackerWaiter.html" class="type-name-link" title="class in org.tasktide.engine.trackers">TrackerWaiter&lt;T&gt;</a> - Class in <a href="org/tasktide/engine/trackers/package-summary.html">org.tasktide.engine.trackers</a></dt>
 <dd>
-<div class="block">Class to the hold the logic for how to wait on completion
- of tasks processing for <a href="org/tasktide/core/TaskTideModel.html" title="interface in org.tasktide.core"><code>TaskTideModel</code></a> through the
- <a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers"><code>ExecutorServiceTracker</code></a> interface.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 </dd>
 <dt><a href="org/tasktide/engine/traversers/ItemTaskTraverser.html#traverse(java.util.List)" class="member-name-link">traverse(List)</a> - Method in class org.tasktide.engine.traversers.<a href="org/tasktide/engine/traversers/ItemTaskTraverser.html" title="class in org.tasktide.engine.traversers">ItemTaskTraverser</a></dt>
 <dd>
@@ -9586,14 +9442,6 @@ Resolves yasson-3.0.&gt;=4 bump where generic key does not seem supported
 <dd>
 <div class="block">Unpacks zip file</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/json_repo/Compression.html#unzipDatabase(java.lang.String)" class="member-name-link">unzipDatabase(String)</a> - Method in class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/Compression.html" title="class in org.tasktide.core.repository.json_repo">Compression</a></dt>
-<dd>
-<div class="block">Unzip database, providing the compressed byte arrays</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/Compression.html#unzipToJson(java.lang.String)" class="member-name-link">unzipToJson(String)</a> - Method in class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/Compression.html" title="class in org.tasktide.core.repository.json_repo">Compression</a></dt>
-<dd>
-<div class="block">Unzip database file to JSON Array DB</div>
-</dd>
 <dt><a href="org/tasktide/itemstore/ItemStore.html#update(org.tasktide.itemstore.DbTarget,org.tasktide.itemstore.Item)" class="member-name-link">update(DbTarget, Item)</a> - Method in interface org.tasktide.itemstore.<a href="org/tasktide/itemstore/ItemStore.html" title="interface in org.tasktide.itemstore">ItemStore</a></dt>
 <dd>
 <div class="block">Updates <a href="org/tasktide/itemstore/Item.html" title="class in org.tasktide.itemstore"><code>Item</code></a> from cache for <a href="org/tasktide/itemstore/DbTarget.html" title="enum class in org.tasktide.itemstore"><code>DbTarget</code></a></div>
@@ -9631,10 +9479,6 @@ Resolves yasson-3.0.&gt;=4 bump where generic key does not seem supported
 <dt><a href="org/tasktide/core/repository/JpaRepository.html#updateModel(T)" class="member-name-link">updateModel(T)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JpaRepository.html" title="class in org.tasktide.core.repository">JpaRepository</a></dt>
 <dd>
 <div class="block">Update provided model</div>
-</dd>
-<dt><a href="org/tasktide/core/repository/JsonRepository.html#updateModel(T)" class="member-name-link">updateModel(T)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/JsonRepository.html" title="class in org.tasktide.core.repository">JsonRepository</a></dt>
-<dd>
-<div class="block">Swap old model for new, index changes</div>
 </dd>
 <dt><a href="org/tasktide/core/repository/TemplateRepository.html#updateModel(T)" class="member-name-link">updateModel(T)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/TemplateRepository.html" title="class in org.tasktide.core.repository">TemplateRepository</a></dt>
 <dd>
@@ -9733,6 +9577,10 @@ Resolves yasson-3.0.&gt;=4 bump where generic key does not seem supported
 <dd>
 <div class="block">Interface method to validate if command can occur</div>
 </dd>
+<dt><a href="org/tasktide/core/repository/AbstractRepository.html#validateQueryFieldName(java.lang.String)" class="member-name-link">validateQueryFieldName(String)</a> - Method in class org.tasktide.core.repository.<a href="org/tasktide/core/repository/AbstractRepository.html" title="class in org.tasktide.core.repository">AbstractRepository</a></dt>
+<dd>
+<div class="block">Method to evaluate field members</div>
+</dd>
 <dt><a href="org/tasktide/api/auth/AuthenticationSchemeType.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class org.tasktide.api.auth.<a href="org/tasktide/api/auth/AuthenticationSchemeType.html" title="enum class in org.tasktide.api.auth">AuthenticationSchemeType</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
@@ -9793,10 +9641,6 @@ Resolves yasson-3.0.&gt;=4 bump where generic key does not seem supported
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/json_repo/JsonRepoType.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/JsonRepoType.html" title="enum class in org.tasktide.core.repository.json_repo">JsonRepoType</a></dt>
-<dd>
-<div class="block">Returns the enum constant of this class with the specified name.</div>
-</dd>
 <dt><a href="org/tasktide/core/repository/RepositoryType.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class org.tasktide.core.repository.<a href="org/tasktide/core/repository/RepositoryType.html" title="enum class in org.tasktide.core.repository">RepositoryType</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
@@ -9831,6 +9675,7 @@ Resolves yasson-3.0.&gt;=4 bump where generic key does not seem supported
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutionState.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutionState.html" title="enum class in org.tasktide.engine.trackers">ExecutionState</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
 <dt><a href="org/tasktide/engine/workerunit/container/WorkerUnitModelType.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class org.tasktide.engine.workerunit.container.<a href="org/tasktide/engine/workerunit/container/WorkerUnitModelType.html" title="enum class in org.tasktide.engine.workerunit.container">WorkerUnitModelType</a></dt>
@@ -9968,11 +9813,6 @@ the order they are declared.</div>
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/json_repo/JsonRepoType.html#values()" class="member-name-link">values()</a> - Static method in enum class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/JsonRepoType.html" title="enum class in org.tasktide.core.repository.json_repo">JsonRepoType</a></dt>
-<dd>
-<div class="block">Returns an array containing the constants of this enum class, in
-the order they are declared.</div>
-</dd>
 <dt><a href="org/tasktide/core/repository/RepositoryType.html#values()" class="member-name-link">values()</a> - Static method in enum class org.tasktide.core.repository.<a href="org/tasktide/core/repository/RepositoryType.html" title="enum class in org.tasktide.core.repository">RepositoryType</a></dt>
 <dd>
 <div class="block">Returns an array containing the constants of this enum class, in
@@ -10015,6 +9855,7 @@ the order they are declared.</div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutionState.html#values()" class="member-name-link">values()</a> - Static method in enum class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutionState.html" title="enum class in org.tasktide.engine.trackers">ExecutionState</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>
 </dd>
@@ -10290,8 +10131,13 @@ the order they are declared.</div>
 </dl>
 <h2 class="title" id="I:W">W</h2>
 <dl class="index">
+<dt><a href="org/tasktide/engine/worker/TaskTideEngineUtility.html#wait(java.util.concurrent.TimeUnit,long)" class="member-name-link">wait(TimeUnit, long)</a> - Static method in class org.tasktide.engine.worker.<a href="org/tasktide/engine/worker/TaskTideEngineUtility.html" title="class in org.tasktide.engine.worker">TaskTideEngineUtility</a></dt>
+<dd>
+<div class="block">Wait required number of seconds</div>
+</dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html#waitForAll(java.util.List)" class="member-name-link">waitForAll(List)</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceTracker.html" title="class in org.tasktide.engine.trackers">ExecutorServiceTracker</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Wait for future list</div>
 </dd>
 <dt><a href="org/tasktide/itemstore/AbstractItemStore.html#waitForLock()" class="member-name-link">waitForLock()</a> - Method in class org.tasktide.itemstore.<a href="org/tasktide/itemstore/AbstractItemStore.html" title="class in org.tasktide.itemstore">AbstractItemStore</a></dt>
@@ -10314,28 +10160,22 @@ the order they are declared.</div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/TrackerWaiter.html#waitForWorkload()" class="member-name-link">waitForWorkload()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TrackerWaiter.html" title="class in org.tasktide.engine.trackers">TrackerWaiter</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Wait on workload processing to be completed.</div>
 </dd>
 <dt><a href="org/tasktide/mutex/model/MutexState.html#WAITING" class="member-name-link">WAITING</a> - Enum constant in enum class org.tasktide.mutex.model.<a href="org/tasktide/mutex/model/MutexState.html" title="enum class in org.tasktide.mutex.model">MutexState</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/tasktide/mutex/utils/MutexFilesUtils.html#waitJitterTime()" class="member-name-link">waitJitterTime()</a> - Static method in class org.tasktide.mutex.utils.<a href="org/tasktide/mutex/utils/MutexFilesUtils.html" title="class in org.tasktide.mutex.utils">MutexFilesUtils</a></dt>
-<dd>
-<div class="block">Wait for random jitter time</div>
-</dd>
-<dt><a href="org/tasktide/mutex/utils/MutexFilesUtils.html#waitJitterTime(long)" class="member-name-link">waitJitterTime(long)</a> - Static method in class org.tasktide.mutex.utils.<a href="org/tasktide/mutex/utils/MutexFilesUtils.html" title="class in org.tasktide.mutex.utils">MutexFilesUtils</a></dt>
-<dd>
-<div class="block">Wait for random jitter time</div>
-</dd>
 <dt><a href="org/tasktide/core/supporting/Utils.html#waitMilliSeconds(int)" class="member-name-link">waitMilliSeconds(int)</a> - Method in class org.tasktide.core.supporting.<a href="org/tasktide/core/supporting/Utils.html" title="class in org.tasktide.core.supporting">Utils</a></dt>
 <dd>
 <div class="block">Wait random amount of milliseconds up to limit</div>
 </dd>
 <dt><a href="org/tasktide/engine/worker/TaskTideEngineUtility.html#waitOnExecutorTrackerWorkItem(int,org.apache.logging.log4j.Logger)" class="member-name-link">waitOnExecutorTrackerWorkItem(int, Logger)</a> - Static method in class org.tasktide.engine.worker.<a href="org/tasktide/engine/worker/TaskTideEngineUtility.html" title="class in org.tasktide.engine.worker">TaskTideEngineUtility</a></dt>
 <dd>
-<div class="block">Waits via <a href="org/tasktide/engine/trackers/FutureTrackers.html" title="class in org.tasktide.engine.trackers"><code>FutureTrackers</code></a></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 </dd>
 <dt><a href="org/tasktide/engine/trackers/ExecutorServiceItem.html#waitOnTask()" class="member-name-link">waitOnTask()</a> - Method in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/ExecutorServiceItem.html" title="class in org.tasktide.engine.trackers">ExecutorServiceItem</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Wait on task processing to complete</div>
 </dd>
 <dt><a href="org/tasktide/mutex/utils/MutexConstants.html#waitOverJitter()" class="member-name-link">waitOverJitter()</a> - Static method in class org.tasktide.mutex.utils.<a href="org/tasktide/mutex/utils/MutexConstants.html" title="class in org.tasktide.mutex.utils">MutexConstants</a></dt>
@@ -10345,10 +10185,6 @@ the order they are declared.</div>
 <dt><a href="org/tasktide/core/supporting/Utils.html#waitSeconds(int)" class="member-name-link">waitSeconds(int)</a> - Method in class org.tasktide.core.supporting.<a href="org/tasktide/core/supporting/Utils.html" title="class in org.tasktide.core.supporting">Utils</a></dt>
 <dd>
 <div class="block">Wait random amount of seconds up to limit</div>
-</dd>
-<dt><a href="org/tasktide/engine/worker/TaskTideEngineUtility.html#waitSeconds(int)" class="member-name-link">waitSeconds(int)</a> - Static method in class org.tasktide.engine.worker.<a href="org/tasktide/engine/worker/TaskTideEngineUtility.html" title="class in org.tasktide.engine.worker">TaskTideEngineUtility</a></dt>
-<dd>
-<div class="block">Wait required number of seconds</div>
 </dd>
 <dt><a href="org/tasktide/mutex/strategy/ElectionStrategy.html#waitUntilLeader(org.tasktide.mutex.model.Mutex)" class="member-name-link">waitUntilLeader(Mutex)</a> - Method in class org.tasktide.mutex.strategy.<a href="org/tasktide/mutex/strategy/ElectionStrategy.html" title="class in org.tasktide.mutex.strategy">ElectionStrategy</a></dt>
 <dd>
@@ -10875,9 +10711,13 @@ the order they are declared.</div>
 <dt><a href="org/tasktide/core/model/builders/BuilderType.html#WORK_ITEM" class="member-name-link">WORK_ITEM</a> - Enum constant in enum class org.tasktide.core.model.builders.<a href="org/tasktide/core/model/builders/BuilderType.html" title="enum class in org.tasktide.core.model.builders">BuilderType</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/engine/trackers/FutureTrackers.html#WORK_ITEM_TRACKER" class="member-name-link">WORK_ITEM_TRACKER</a> - Static variable in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/FutureTrackers.html" title="class in org.tasktide.engine.trackers">FutureTrackers</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="org/tasktide/engine/trackers/TaskTrackers.html#WORK_ITEM_TRACKER" class="member-name-link">WORK_ITEM_TRACKER</a> - Static variable in class org.tasktide.engine.trackers.<a href="org/tasktide/engine/trackers/TaskTrackers.html" title="class in org.tasktide.engine.trackers">TaskTrackers</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="org/tasktide/engine/policies/WorkerExecutionPolicy.html" class="type-name-link" title="enum class in org.tasktide.engine.policies">WorkerExecutionPolicy</a> - Enum Class in <a href="org/tasktide/engine/policies/package-summary.html">org.tasktide.engine.policies</a></dt>
 <dd>
 <div class="block">Defines valid execution policies of the worker</div>
@@ -10920,8 +10760,6 @@ the order they are declared.</div>
 <dt><a href="org/tasktide/core/manager/command/ManagerTarget.html#WORKFLOW" class="member-name-link">WORKFLOW</a> - Enum constant in enum class org.tasktide.core.manager.command.<a href="org/tasktide/core/manager/command/ManagerTarget.html" title="enum class in org.tasktide.core.manager.command">ManagerTarget</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/model/builders/BuilderType.html#WORKFLOW" class="member-name-link">WORKFLOW</a> - Enum constant in enum class org.tasktide.core.model.builders.<a href="org/tasktide/core/model/builders/BuilderType.html" title="enum class in org.tasktide.core.model.builders">BuilderType</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/JsonRepoType.html#WORKFLOW" class="member-name-link">WORKFLOW</a> - Enum constant in enum class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/JsonRepoType.html" title="enum class in org.tasktide.core.repository.json_repo">JsonRepoType</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/TaskTideModelType.html#WORKFLOW" class="member-name-link">WORKFLOW</a> - Enum constant in enum class org.tasktide.core.<a href="org/tasktide/core/TaskTideModelType.html" title="enum class in org.tasktide.core">TaskTideModelType</a></dt>
 <dd>&nbsp;</dd>
@@ -11026,8 +10864,6 @@ the order they are declared.</div>
 <div class="block">Constructor for JSON Deserialization</div>
 </dd>
 <dt><a href="org/tasktide/core/manager/command/ManagerTarget.html#WORKITEM" class="member-name-link">WORKITEM</a> - Enum constant in enum class org.tasktide.core.manager.command.<a href="org/tasktide/core/manager/command/ManagerTarget.html" title="enum class in org.tasktide.core.manager.command">ManagerTarget</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/tasktide/core/repository/json_repo/JsonRepoType.html#WORKITEM" class="member-name-link">WORKITEM</a> - Enum constant in enum class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/JsonRepoType.html" title="enum class in org.tasktide.core.repository.json_repo">JsonRepoType</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/core/TaskTideModelType.html#WORKITEM" class="member-name-link">WORKITEM</a> - Enum constant in enum class org.tasktide.core.<a href="org/tasktide/core/TaskTideModelType.html" title="enum class in org.tasktide.core">TaskTideModelType</a></dt>
 <dd>&nbsp;</dd>
@@ -11186,10 +11022,6 @@ the order they are declared.</div>
 <dd>
 <div class="block">Sets <a href="org/tasktide/parser/ArgumentTree.html" title="class in org.tasktide.parser"><code>ArgumentTree</code></a> path to provided</div>
 </dd>
-<dt><a href="org/tasktide/core/repository/json_repo/Compression.html#writeByteArrToFile(byte%5B%5D,java.lang.String)" class="member-name-link">writeByteArrToFile(byte[], String)</a> - Method in class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/Compression.html" title="class in org.tasktide.core.repository.json_repo">Compression</a></dt>
-<dd>
-<div class="block">Write byte array to target file</div>
-</dd>
 <dt><a href="org/tasktide/mutex/utils/MutexFilesUtils.html#writeConfirmatoryBallot(org.tasktide.mutex.model.Mutex,java.nio.file.Path)" class="member-name-link">writeConfirmatoryBallot(Mutex, Path)</a> - Static method in class org.tasktide.mutex.utils.<a href="org/tasktide/mutex/utils/MutexFilesUtils.html" title="class in org.tasktide.mutex.utils">MutexFilesUtils</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/tasktide/mutex/utils/MutexFilesUtils.html#writeElectionFile(org.tasktide.mutex.model.Mutex)" class="member-name-link">writeElectionFile(Mutex)</a> - Static method in class org.tasktide.mutex.utils.<a href="org/tasktide/mutex/utils/MutexFilesUtils.html" title="class in org.tasktide.mutex.utils">MutexFilesUtils</a></dt>
@@ -11216,10 +11048,6 @@ the order they are declared.</div>
 </dl>
 <h2 class="title" id="I:Z">Z</h2>
 <dl class="index">
-<dt><a href="org/tasktide/core/repository/json_repo/Compression.html#zipDatabase(java.util.Map,java.lang.String)" class="member-name-link">zipDatabase(Map, String)</a> - Method in class org.tasktide.core.repository.json_repo.<a href="org/tasktide/core/repository/json_repo/Compression.html" title="class in org.tasktide.core.repository.json_repo">Compression</a></dt>
-<dd>
-<div class="block">Zip the compressed database to target file</div>
-</dd>
 <dt><a href="org/tasktide/engine/executor/streamhandler/StreamHandler.html#zipFiles()" class="member-name-link">zipFiles()</a> - Method in class org.tasktide.engine.executor.streamhandler.<a href="org/tasktide/engine/executor/streamhandler/StreamHandler.html" title="class in org.tasktide.engine.executor.streamhandler">StreamHandler</a></dt>
 <dd>
 <div class="block">Zip the stdour/stderr logs</div>

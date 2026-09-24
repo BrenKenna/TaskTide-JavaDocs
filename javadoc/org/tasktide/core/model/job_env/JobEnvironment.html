@@ -30,6 +30,7 @@ loadScripts(document, 'script');</script>
 <li><a href="../../../../../index.html">Overview</a></li>
 <li class="nav-bar-cell1-rev">Class</li>
 <li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
 <li><a href="../../../../../index-all.html">Index</a></li>
 <li><a href="../../../../../search.html">Search</a></li>
 <li><a href="../../../../../help-doc.html#class">Help</a></li>
@@ -66,7 +67,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
 <li><a href="#makeJobEnvironment(java.lang.String,org.tasktide.core.model.job_env.JobType,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,org.tasktide.core.model.job_env.JobState,org.tasktide.core.model.CustomAnnotation)" tabindex="0">makeJobEnvironment(String, JobType, String, int, String, String, String, JobState, CustomAnnotation)</a></li>
-<li><a href="#getType()" tabindex="0">getType()</a></li>
+<li><a href="#getJobType()" tabindex="0">getJobType()</a></li>
 <li><a href="#getJobId()" tabindex="0">getJobId()</a></li>
 <li><a href="#getArrayInd()" tabindex="0">getArrayInd()</a></li>
 <li><a href="#getHostname()" tabindex="0">getHostname()</a></li>
@@ -77,7 +78,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#setJavaVersion(java.lang.String)" tabindex="0">setJavaVersion(String)</a></li>
 <li><a href="#getId()" tabindex="0">getId()</a></li>
 <li><a href="#setId(java.lang.String)" tabindex="0">setId(String)</a></li>
-<li><a href="#setType(org.tasktide.core.model.job_env.JobType)" tabindex="0">setType(JobType)</a></li>
+<li><a href="#setJobType(org.tasktide.core.model.job_env.JobType)" tabindex="0">setJobType(JobType)</a></li>
 <li><a href="#setJobId(java.lang.String)" tabindex="0">setJobId(String)</a></li>
 <li><a href="#setArrayInd(int)" tabindex="0">setArrayInd(int)</a></li>
 <li><a href="#getAnnotations()" tabindex="0">getAnnotations()</a></li>
@@ -224,15 +225,15 @@ A single JobEnviroment can relate to multiple <a href="../workitem/WorkItem.html
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets current <a href="JobState.html" title="enum class in org.tasktide.core.model.job_env"><code>JobState</code></a></div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getState()" class="member-name-link">getState</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="JobType.html" title="enum class in org.tasktide.core.model.job_env">JobType</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getJobType()" class="member-name-link">getJobType</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets current <a href="JobState.html" title="enum class in org.tasktide.core.model.job_env"><code>JobState</code></a></div>
+<div class="block">Get job jobType</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="JobType.html" title="enum class in org.tasktide.core.model.job_env">JobType</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getType()" class="member-name-link">getType</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getState()" class="member-name-link">getState</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Get job type</div>
+<div class="block">Gets current <a href="JobState.html" title="enum class in org.tasktide.core.model.job_env"><code>JobState</code></a></div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getValueFromField(java.lang.String)" class="member-name-link">getValueFromField</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;field)</code></div>
@@ -299,7 +300,7 @@ A single JobEnviroment can relate to multiple <a href="../workitem/WorkItem.html
 <div class="block">Sets a new <a href="JobState.html" title="enum class in org.tasktide.core.model.job_env"><code>JobState</code></a></div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setType(org.tasktide.core.model.job_env.JobType)" class="member-name-link">setType</a><wbr>(<a href="JobType.html" title="enum class in org.tasktide.core.model.job_env">JobType</a>&nbsp;type)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setJobType(org.tasktide.core.model.job_env.JobType)" class="member-name-link">setJobType</a><wbr>(<a href="JobType.html" title="enum class in org.tasktide.core.model.job_env">JobType</a>&nbsp;jobType)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Set <a href="JobType.html" title="enum class in org.tasktide.core.model.job_env"><code>JobType</code></a></div>
 </div>
@@ -460,11 +461,11 @@ A single JobEnviroment can relate to multiple <a href="../workitem/WorkItem.html
 </section>
 </li>
 <li>
-<section class="detail" id="getType()">
-<h3>getType</h3>
+<section class="detail" id="getJobType()">
+<h3>getJobType</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="JobType.html" title="enum class in org.tasktide.core.model.job_env">JobType</a></span>&nbsp;<span class="element-name">getType</span>()</div>
-<div class="block">Get job type</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="JobType.html" title="enum class in org.tasktide.core.model.job_env">JobType</a></span>&nbsp;<span class="element-name">getJobType</span>()</div>
+<div class="block">Get job jobType</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd><a href="JobType.html" title="enum class in org.tasktide.core.model.job_env"><code>JobType</code></a></dd>
@@ -605,14 +606,14 @@ A single JobEnviroment can relate to multiple <a href="../workitem/WorkItem.html
 </section>
 </li>
 <li>
-<section class="detail" id="setType(org.tasktide.core.model.job_env.JobType)">
-<h3>setType</h3>
+<section class="detail" id="setJobType(org.tasktide.core.model.job_env.JobType)">
+<h3>setJobType</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setType</span><wbr><span class="parameters">(<a href="JobType.html" title="enum class in org.tasktide.core.model.job_env">JobType</a>&nbsp;type)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setJobType</span><wbr><span class="parameters">(<a href="JobType.html" title="enum class in org.tasktide.core.model.job_env">JobType</a>&nbsp;jobType)</span></div>
 <div class="block">Set <a href="JobType.html" title="enum class in org.tasktide.core.model.job_env"><code>JobType</code></a></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>type</code> - </dd>
+<dd><code>jobType</code> - </dd>
 </dl>
 </div>
 </section>
